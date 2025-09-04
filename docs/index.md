@@ -5,18 +5,20 @@ tags:
 - tag2
 ---
 <center>
-<font size= "6">(Your Name) Datasheet</font><br>
+<font size= "6">Mihir Patel Datasheet</font><br>
 as part of<br>
-<font size= "8"> Project Name</font><br>
+<font size= "8"> egr304 </font><br>
 for<br>
-<font size= "5"> Team ### </font><br>
+<font size= "5"> Team 206 </font><br>
 
 **Submission: month, DD, YYYY**
 </center>
 
 ## Introduction
 
-* This needs to be updated so that a reader gets an idea of the purpose of this datasheet.
+* Welcome to my individual datasheet for EGR 304 – Embedded Systems Design, Fall 2025. I’m Mihir Patel, currently a Junior majoring in Robotics at Arizona State University. This datasheet provides an overview of my individual work and contributions to **Team 206**’s semester-long design project.
+
+The purpose of this datasheet is to document my role, responsibilities, and technical contributions, serving both as a personal archive and a point of reference for anyone reviewing the full team project. 
 
 ### Project Summary
 
