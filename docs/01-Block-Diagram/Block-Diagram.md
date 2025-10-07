@@ -33,8 +33,8 @@ The design uses two voltage levels:
 - **PWM Outputs (RB1, RB2, RD0):** Control motor speed and direction  
 - **Digital I/O Ports (RF5, RC4, RD1, RD2, RD3):** Routed through the 8-pin connector for inter-board communication and expansion  
 - **Connector Pins:**
-  - Pins **1–4:** Digital signals  
-  - Pins **5–7:** Analog sensor data  
+  - Pins **1–5:** Digital signals  
+  - Pins **6–7:** Analog sensor data  
   - Pin **8:** Ground (GND)
 
 Each connection is clearly labeled with its **direction** and **signal type** to maintain compatibility and simplify system integration.
