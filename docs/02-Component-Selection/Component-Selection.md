@@ -22,7 +22,7 @@ title: Component Selection
 
 | Solution | Pros | Cons |
 |----------|------|------|
-| **Pololu S13V15F5**<br>5V step-up/step-down switching regulator, efficient, compact<br>Price: $4.95/each<br>[Product Page](https://www.pololu.com/product/4084) | - Energy-efficient<br>- Compact<br>- Wide input voltage range<br>- Built-in protections | - More complex<br>- Requires external components<br>- Higher cost |
+| **Pololu S13V15F5**<br>![S13V15F5](S13V15F5.jpg)<br>5V step-up/step-down switching regulator, efficient, compact<br>Price: $4.95/each<br>[Product Page](https://www.pololu.com/product/4084) | - Energy-efficient<br>- Compact<br>- Wide input voltage range<br>- Built-in protections | - More complex<br>- Requires external components<br>- Higher cost |
 
 **Choice:** Option 3: Pololu S13V15F5  
 **Rationale:** The Pololu S13V15F5 is a switching regulator, making it highly energy-efficient and reducing heat. Its wide input range ensures a stable 5V output from a 9V supply, protecting sensitive electronics. Although slightly more expensive and needing external components, its compact size and built-in protections make it ideal for the Smart Curtain subsystem.  
@@ -35,19 +35,19 @@ title: Component Selection
 
 | Solution | Pros | Cons |
 |----------|------|------|
-| **LM358N**<br>Dual op-amp, widely used, low cost<br>Price: $0.09/each<br>[Product Page](https://www.digikey.com/en/products/detail/stmicroelectronics/LM358N/591694)<br>[Datasheet](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1085/LM158%2C258%2C358.pdf) | - Low cost<br>- Easy to use<br>- Widely available | - Limited voltage range<br>- Non-rail-to-rail<br>- Lower precision |
+| **LM358N**<br>![LM358N](LM358N.jpeg)<br>Dual op-amp, widely used, low cost<br>Price: $0.09/each<br>[Product Page](https://www.digikey.com/en/products/detail/stmicroelectronics/LM358N/591694)<br>[Datasheet](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1085/LM158%2C258%2C358.pdf) | - Low cost<br>- Easy to use<br>- Widely available | - Limited voltage range<br>- Non-rail-to-rail<br>- Lower precision |
 
 ### Option 2
 
 | Solution | Pros | Cons |
 |----------|------|------|
-| **LM324N**<br>Quad op-amp, low cost, general-purpose<br>Price: $0.47/each<br>[Product Page](https://www.digikey.com/en/products/detail/texas-instruments/LM324N/277627)<br>[Datasheet](https://www.ti.com/lit/ds/symlink/lm224.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1760714829701) | - Quad op-amp<br>- Low cost<br>- Easy integration | - Limited voltage range<br>- Non-rail-to-rail<br>- Lower precision |
+| **LM324N**<br>![LM324N](LM324N.jpeg)<br>Quad op-amp, low cost, general-purpose<br>Price: $0.47/each<br>[Product Page](https://www.digikey.com/en/products/detail/texas-instruments/LM324N/277627)<br>[Datasheet](https://www.ti.com/lit/ds/symlink/lm224.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1760714829701) | - Quad op-amp<br>- Low cost<br>- Easy integration | - Limited voltage range<br>- Non-rail-to-rail<br>- Lower precision |
 
 ### Option 3
 
 | Solution | Pros | Cons |
 |----------|------|------|
-| **TLV2372IDR**<br>Rail-to-rail I/O, low voltage, low power<br>Price: $1.00/each<br>[Product Page](https://www.mouser.com/ProductDetail/Texas-Instruments/TLV2372IDR?qs=WzgTT80quPHbp6isMOHsKA%3D%3D)<br>[Datasheet](https://www.ti.com/lit/ds/symlink/tlv2372.pdf) | - Rail-to-rail input/output<br>- Low power consumption<br>- Accurate signal amplification | - Slightly higher cost<br>- Limited output drive |
+| **TLV2372IDR**<br>![TLV2372IDR](TLV2372IDR.jpeg)<br>Rail-to-rail I/O, low voltage, low power<br>Price: $1.00/each<br>[Product Page](https://www.mouser.com/ProductDetail/Texas-Instruments/TLV2372IDR?qs=WzgTT80quPHbp6isMOHsKA%3D%3D)<br>[Datasheet](https://www.ti.com/lit/ds/symlink/tlv2372.pdf) | - Rail-to-rail input/output<br>- Low power consumption<br>- Accurate signal amplification | - Slightly higher cost<br>- Limited output drive |
 
 **Choice:** Option 3: TLV2372IDR  
 **Rationale:** The TLV2372IDR provides rail-to-rail input/output, ensuring accurate amplification of low-voltage signals from sensors. Its low power consumption supports efficient operation, while cheaper op-amps risk inaccuracies. This choice ensures reliable sensor signal processing.  
