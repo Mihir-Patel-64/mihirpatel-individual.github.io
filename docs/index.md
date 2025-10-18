@@ -26,8 +26,8 @@ The purpose of this datasheet is to document my role, responsibilities, and tech
 * Add context that ties into the link to your [team report.](https://embedded-systems-design.github.io/EGR304TeamTemplate/)
 
 ## Project Sections
-- [Component Selection](Component-Selection.md)
-- [Power Budget](Power-Budget.md)
+- [Component Selection](02-Component-Selection/Component-Selection.md)
+- [Power Budget](05-Power-Budget/Power-Budget.md)
 
 ### My Contribution
 
