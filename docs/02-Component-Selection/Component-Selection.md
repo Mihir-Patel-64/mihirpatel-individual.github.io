@@ -10,13 +10,13 @@ title: Component Selection
 
 | Solution | Pros | Cons |
 |----------|------|------|
-| **LM7805CT/NOPB**<br>![LM7805CT/NOPB](02-Component-Selection/LM7805CT/NOPB.jpeg)<br>Classic 5V linear regulator, widely used, easy to integrate<br>Price: $1.80/each<br>[Product Page](https://www.digikey.com/en/products/detail/texas-instruments/lm7805ct-nopb/3901929?_gl=1*1qyn9bn*_up*MQ..*_gs*MQ..&gclid=CjwKCAjw0sfHBhB6EiwAQtv5qdeTTWOp05cA6KonRds8dxN1djDoBjpO4AzG9BniGVk703AQC1o_YBoCs0UQAvD_BwE&gclsrc=aw.ds&gbraid=0AAAAADrbLlg0dPaLTWZbBCZYg4B1yAzaT)<br>[Datasheet](https://www.ti.com/lit/ds/symlink/lm7800.pdf) | - Simple to use<br>- Widely available<br>- Low cost | - Inefficient<br>- Generates heat<br>- Limited input voltage range |
+| **LM7805CT/NOPB**<br>![LM7805CT/NOPB](LM7805CT/NOPB.jpeg)<br>Classic 5V linear regulator, widely used, easy to integrate<br>Price: $1.80/each<br>[Product Page](https://www.digikey.com/en/products/detail/texas-instruments/lm7805ct-nopb/3901929?_gl=1*1qyn9bn*_up*MQ..*_gs*MQ..&gclid=CjwKCAjw0sfHBhB6EiwAQtv5qdeTTWOp05cA6KonRds8dxN1djDoBjpO4AzG9BniGVk703AQC1o_YBoCs0UQAvD_BwE&gclsrc=aw.ds&gbraid=0AAAAADrbLlg0dPaLTWZbBCZYg4B1yAzaT)<br>[Datasheet](https://www.ti.com/lit/ds/symlink/lm7800.pdf) | - Simple to use<br>- Widely available<br>- Low cost | - Inefficient<br>- Generates heat<br>- Limited input voltage range |
 
 ### Option 2
 
 | Solution | Pros | Cons |
 |----------|------|------|
-| **TL780-05CKS**<br>5V linear regulator, low noise, robust, standard TO-220 package<br>Price: $2.42/each<br>[Product Page](https://www.digikey.com/en/products/detail/texas-instruments/TL780-05KCS/528597?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLlg0dPaLTWZbBCZYg4B1yAzaT&gclid=CjwKCAjw0sfHBhB6EiwAQtv5qdeTTWOp05cA6KonRds8dxN1djDoBjpO4AzG9BniGVk703AQC1o_YBoCs0UQAvD_BwE)<br>[Datasheet](https://www.ti.com/lit/ds/slvs055m/slvs055m.pdf) | - Reliable<br>- Low noise<br>- Easy integration | - Heat generation<br>- Less efficient<br>- Requires heatsink at high current |
+| **TL780-05CKS**<br>![TL780-05CKS](TL780-05CKS.jpeg)<br>5V linear regulator, low noise, robust, standard TO-220 package<br>Price: $2.42/each<br>[Product Page](https://www.digikey.com/en/products/detail/texas-instruments/TL780-05KCS/528597?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLlg0dPaLTWZbBCZYg4B1yAzaT&gclid=CjwKCAjw0sfHBhB6EiwAQtv5qdeTTWOp05cA6KonRds8dxN1djDoBjpO4AzG9BniGVk703AQC1o_YBoCs0UQAvD_BwE)<br>[Datasheet](https://www.ti.com/lit/ds/slvs055m/slvs055m.pdf) | - Reliable<br>- Low noise<br>- Easy integration | - Heat generation<br>- Less efficient<br>- Requires heatsink at high current |
 
 ### Option 3
 
