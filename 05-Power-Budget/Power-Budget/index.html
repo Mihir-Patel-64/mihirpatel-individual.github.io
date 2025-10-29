@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#overview" class="md-skip">
+        <a href="#power-budget" class="md-skip">
           Skip to content
         </a>
       
@@ -650,6 +650,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -678,6 +680,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -695,18 +699,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#conclusions" class="md-nav__link">
+  <a href="#power-budget-table" class="md-nav__link">
     <span class="md-ellipsis">
-      Conclusions
+      Power Budget Table
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#resouces" class="md-nav__link">
+  <a href="#power-rails-and-regulators" class="md-nav__link">
     <span class="md-ellipsis">
-      Resouces
+      Power Rails and Regulators
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#battery-life-estimation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Battery Life Estimation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reflection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reflection
     </span>
   </a>
   
@@ -801,6 +823,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -818,18 +842,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#conclusions" class="md-nav__link">
+  <a href="#power-budget-table" class="md-nav__link">
     <span class="md-ellipsis">
-      Conclusions
+      Power Budget Table
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#resouces" class="md-nav__link">
+  <a href="#power-rails-and-regulators" class="md-nav__link">
     <span class="md-ellipsis">
-      Resouces
+      Power Rails and Regulators
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#battery-life-estimation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Battery Life Estimation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reflection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reflection
     </span>
   </a>
   
@@ -858,20 +900,101 @@
   
 
 
-  <h1>Power Budget</h1>
-
+<h1 id="power-budget">Power Budget</h1>
+<p>This page presents the Power Budget for the system design, ensuring that all voltage rails, regulators, and power sources can reliably meet the required current demand for every subsystem.</p>
+<hr>
 <h2 id="overview">Overview</h2>
-<p>Write a overview of what you did and why you did a Power Budget.</p>
+<p>The Power Budget includes:
+- Power requirements of all major components (from datasheets).<br>
+- Assigned voltage rails and current draws.<br>
+- Regulator and source selections with safety margins.  </p>
+<hr>
+<h2 id="power-budget-table">Power Budget Table</h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../PowerBudget_MihirPatel.jpg" data-desc-position="bottom"><img alt="Power Budget Table" src="../PowerBudget_MihirPatel.jpg"></a>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="PowerBudget.xlsx" data-desc-position="bottom"><img alt="Download Power Budget (Excel)" src="PowerBudget.xlsx"></a><br>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="PowerBudget.xlsx.zip" data-desc-position="bottom"><img alt="Download Power Budget (ZIP)" src="PowerBudget.xlsx.zip"></a>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../PowerBudget_MihirPatel.pdf" data-desc-position="bottom"><img alt="Download Power Budget (PDF)" src="../PowerBudget_MihirPatel.pdf"></a></p>
+<hr>
+<h2 id="power-rails-and-regulators">Power Rails and Regulators</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Power Rail</strong></th>
+<th><strong>Regulator / Source</strong></th>
+<th><strong>Part Number</strong></th>
+<th><strong>Output Voltage</strong></th>
+<th><strong>Max Current (mA)</strong></th>
+<th><strong>Notes</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+12V</td>
+<td>Linear Regulator</td>
+<td>LM7812</td>
+<td>+12V</td>
+<td>1000</td>
+<td>Powers DC Motor and PIR Sensor</td>
+</tr>
+<tr>
+<td>+5V</td>
+<td>Linear Regulator</td>
+<td>LM7805</td>
+<td>+5V</td>
+<td>1000</td>
+<td>Powers PSoC, Op-Amps, and Sensors</td>
+</tr>
+<tr>
+<td>+3.3V</td>
+<td>LDO Regulator</td>
+<td>KA78RM33RTF</td>
+<td>+3.3V</td>
+<td>500</td>
+<td>Powers BLE and logic components</td>
+</tr>
+<tr>
+<td>-5V</td>
+<td>Negative Regulator</td>
+<td>LM7905</td>
+<td>-5V</td>
+<td>500</td>
+<td>Powers dual-supply Op-Amps</td>
+</tr>
+<tr>
+<td>External Source</td>
+<td>Wall Adapter</td>
+<td>Mean Well GST25A24-P1J</td>
+<td>+24V</td>
+<td>5000</td>
+<td>Primary source for positive rails</td>
+</tr>
+<tr>
+<td>Battery Source</td>
+<td>9V Battery</td>
+<td>Duracell MN1604</td>
+<td>±9V</td>
+<td>500</td>
+<td>Supplies power to negative rail</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="battery-life-estimation">Battery Life Estimation</h2>
+<p>Estimated battery life for the -5V rail (9V, 500mAh battery):</p>
 <blockquote>
-<p>Capture your power budge as a image to display. Take time to get clean breaks and a well organized layout.</p>
+<p><strong>≈ 1 hour under continuous full load.</strong></p>
 </blockquote>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../budgetPg1.png" data-desc-position="bottom"><img alt="budget1" height:_300_="height:&quot;300;&quot;" src="../budgetPg1.png" style="style" width:_350_="width:&quot;350&quot;"></a></p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../budgetPg2.png" data-desc-position="bottom"><img alt="budget2" height:_300_="height:&quot;300;&quot;" src="../budgetPg2.png" style="style" width:_350_="width:&quot;350&quot;"></a></p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../budgetPg3.png" data-desc-position="bottom"><img alt="budget3" height:_300_="height:&quot;300;&quot;" src="../budgetPg3.png" style="style" width:_350_="width:&quot;350&quot;"></a></p>
-<h2 id="conclusions">Conclusions</h2>
-<p>From the prepare Power Budget, .....</p>
-<h2 id="resouces">Resouces</h2>
-<p>The power budget as a PDF download is available <a href="../PowerBudgetExample.pdf"><em>here</em></a>, and a Microsoft Excel Sheet <a href="../PowerBudgetExample.xlsx"><em>here</em></a>.</p>
+<p>This represents a worst-case scenario with all active components operating simultaneously.</p>
+<hr>
+<h2 id="reflection">Reflection</h2>
+<p>Developing the Power Budget provided valuable insight into the power flow, efficiency, and safety of the system.<br>
+Key takeaways:
+- Verified each regulator’s load capacity and dropout margin.<br>
+- Identified the DC motor as the highest power consumer.<br>
+- Confirmed that the +24V wall adapter supports all rails simultaneously.<br>
+- Ensured safe and efficient voltage regulation across all subsystems.  </p>
+<p>This analysis guarantees that the overall design maintains electrical reliability and stability during operation.</p>
+<hr>
 
 
 
