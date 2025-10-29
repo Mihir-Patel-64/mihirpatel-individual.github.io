@@ -20,8 +20,18 @@ The Power Budget includes:
 ## Power Budget Table
 
 ![Power Budget Table](PowerBudget_MihirPatel.jpg)
+
+---
+
+### Downloadable Files
+
+- **Power Budget EXCEL:**  
 [Download Power Budget (Excel)](PowerBudget.xlsx)  
+
+- **Power Budget ZIP:**  
 [Download Power Budget (ZIP)](PowerBudget.xlsx.zip)
+
+- **Power Budget PDF:**  
 [Download Power Budget (PDF)](PowerBudget_MihirPatel.pdf)
 
 ---
