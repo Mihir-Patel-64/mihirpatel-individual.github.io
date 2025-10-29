@@ -2,15 +2,26 @@
 title: Schematic
 ---
 
-## Overview
+## Individual Subsystem Schematic
 
-This schematic is design to support .... (highlight functionally, power, and controller).
+This schematic shows the complete design for my Smart Curtain subsystem. It includes the Curiosity Nano microcontroller board, LM7805 power supply, motion and light sensors (with op-amp signal conditioning), H-bridge motor driver, user button, debug LED, and all required connectors. The schematic demonstrates all power, signal, and control connections needed for reliable operation and integration with the team system.
 
+![Smart Curtain Schematic](Individual_Schematic_image_MP.jpg)
 
-![schematic](Screenshot.png){style width:"350" height:"300;"}
-**Figure ##:** Showing a example schematic.
+**Figure ##:** Smart Curtain Subsystem Schematic
 
+---
 
-## Resouces
+### Downloadable Files
 
-The schematic as a PDF download is available [*here*](ExampleSchematic.pdf), and the Zip folder of the project [*here*](dummyZip.zip).
+- **Project ZIP:**  
+  [Download KiCad Project ZIP](HW2folder_MP.zip)
+
+- **Symbol Library ZIP:**  
+  [Download Symbol Library ZIP](Voltage_regulator_symbol.zip)
+
+- **Schematic Image:**  
+  ![Smart Curtain Schematic](Individual_Schematic_image_MP.jpg "Smart Curtain Subsystem Schematic")
+
+- **Schematic PDF:**  
+  [Download High-Resolution Schematic PDF](HW2folder.pdf)
