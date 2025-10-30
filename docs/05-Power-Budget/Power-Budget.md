@@ -11,28 +11,28 @@ This page presents the Power Budget for the system design, ensuring that all vol
 ## Overview
 
 The Power Budget includes:
-- Power requirements of all major components (from datasheets).  
-- Assigned voltage rails and current draws.  
+- Power requirements of all major components.
+- Assigned voltage rails and current consumption.  
 - Regulator and source selections with safety margins.  
 
 ---
 
 ## Power Budget Table
 
-![Power Budget Table](PowerBudget_MihirPatel.jpg)
+![Power Budget Table](PowerBudget_MP.jpg)
 
 ---
 
 ### Downloadable Files
 
 - **Power Budget EXCEL:**  
-[Download Power Budget (Excel)](PowerBudget.xlsx)  
+[Download Power Budget (Excel)](PowerBudget_MP.xlsx)  
 
 - **Power Budget ZIP:**  
-[Download Power Budget (ZIP)](PowerBudget.xlsx.zip)
+[Download Power Budget (ZIP)](PowerBudget_MP.xlsx.zip)
 
 - **Power Budget PDF:**  
-[Download Power Budget (PDF)](PowerBudget_MihirPatel.pdf)
+[Download Power Budget (PDF)](PowerBudget_MP.pdf)
 
 ---
 
@@ -40,34 +40,26 @@ The Power Budget includes:
 
 | **Power Rail** | **Regulator / Source** | **Part Number** | **Output Voltage** | **Max Current (mA)** | **Notes** |
 |----------------|------------------------|------------------|--------------------|----------------------|------------|
-| +12V | Linear Regulator | LM7812 | +12V | 1000 | Powers DC Motor and PIR Sensor |
-| +5V | Linear Regulator | LM7805 | +5V | 1000 | Powers PSoC, Op-Amps, and Sensors |
-| +3.3V | LDO Regulator | KA78RM33RTF | +3.3V | 500 | Powers BLE and logic components |
-| -5V | Negative Regulator | LM7905 | -5V | 500 | Powers dual-supply Op-Amps |
-| External Source | Wall Adapter | Mean Well GST25A24-P1J | +24V | 5000 | Primary source for positive rails |
-| Battery Source | 9V Battery | Duracell MN1604 | ±9V | 500 | Supplies power to negative rail |
+| +12V | External Power Supply | Mean Well LRS-100-12 | +12V | 8500 | Powers DC motor and PIR motion sensor |
+| +5V | Buck Regulator | Pololu S13V15F5 | +5V | 1500 | Powers microcontroller, motor driver, LED, and user input switch |
+
 
 ---
 
-## Battery Life Estimation
+## Power Source Verification
 
-Estimated battery life for the -5V rail (9V, 500mAh battery):
+| **Power Source** | **Part Number** | **Output** | **Max Current (mA)** | **Used (mA)** | **Remaining (mA)** |
+|------------------|----------------|-----------|---------------------|---------------|-------------------|
+| Wall Supply | Mean Well LRS-100-12 | +12V, 10A | 8500 | 6876.25 | 1623.75 |
 
-> **≈ 1 hour under continuous full load.**
+> The 12V source supplies all regulators and rails with plenty of remaining current.
 
-This represents a worst-case scenario with all active components operating simultaneously.
+> No battery supply is needed for this subsystem.
 
 ---
 
-## Reflection
+### Power Budget Summary
 
-Developing the Power Budget provided valuable insight into the power flow, efficiency, and safety of the system.  
-Key takeaways:
-- Verified each regulator’s load capacity and dropout margin.  
-- Identified the DC motor as the highest power consumer.  
-- Confirmed that the +24V wall adapter supports all rails simultaneously.  
-- Ensured safe and efficient voltage regulation across all subsystems.  
-
-This analysis guarantees that the overall design maintains electrical reliability and stability during operation.
+The power budget quantified the electrical demands of the subsystem and guided component selection. By listing each major active device and assigning it to a single voltage rail, we calculated per-rail subtotals and applied a 25% safety margin to account for peak conditions and future changes. This analysis identified the DC motor as the dominant load on the +12V rail, requiring a high-current external supply (Mean Well LRS-100-12). The +5V logic rail is lightly loaded (≈110 mA), so a compact, efficient buck regulator (Pololu S13V15F5) provides ample headroom. Removing unused rails (3.3V and −5V) simplified the design and reduced regulator count, improving reliability. The remaining margins confirm the selected supplies can safely power the subsystem with capacity for modest future expansion.
 
 ---

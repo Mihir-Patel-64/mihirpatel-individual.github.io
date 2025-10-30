@@ -29,57 +29,7 @@ title: Component Selection
 
 ---
 
-## 2. Operational Amplifier (**Control/Signal Subsystem**)
-
-### Option 1
-
-| Solution | Pros | Cons |
-|----------|------|------|
-| **LM358N**<br>![LM358N](LM358N.jpeg)<br>Dual op-amp, widely used, low cost<br>Price: $0.09/each<br>[Product Page](https://www.digikey.com/en/products/detail/stmicroelectronics/LM358N/591694)<br>[Datasheet](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1085/LM158%2C258%2C358.pdf) | - Low cost<br>- Easy to use<br>- Widely available | - Limited voltage range<br>- Non-rail-to-rail<br>- Lower precision |
-
-### Option 2
-
-| Solution | Pros | Cons |
-|----------|------|------|
-| **LM324N**<br>![LM324N](LM324N.jpeg)<br>Quad op-amp, low cost, general-purpose<br>Price: $0.47/each<br>[Product Page](https://www.digikey.com/en/products/detail/texas-instruments/LM324N/277627)<br>[Datasheet](https://www.ti.com/lit/ds/symlink/lm224.pdf?HQS=dis-dk-null-digikeymode-dsf-pf-null-wwe&ts=1760714829701) | - Quad op-amp<br>- Low cost<br>- Easy integration | - Limited voltage range<br>- Non-rail-to-rail<br>- Lower precision |
-
-### Option 3
-
-| Solution | Pros | Cons |
-|----------|------|------|
-| **TLV2372IDR**<br>![TLV2372IDR](TLV2372IDR.jpeg)<br>Rail-to-rail I/O, low voltage, low power<br>Price: $1.00/each<br>[Product Page](https://www.mouser.com/ProductDetail/Texas-Instruments/TLV2372IDR?qs=WzgTT80quPHbp6isMOHsKA%3D%3D)<br>[Datasheet](https://www.ti.com/lit/ds/symlink/tlv2372.pdf) | - Rail-to-rail input/output<br>- Low power consumption<br>- Accurate signal amplification | - Slightly higher cost<br>- Limited output drive |
-
-**Choice:** Option 3: TLV2372IDR  
-**Rationale:** The TLV2372IDR provides rail-to-rail input/output, ensuring accurate amplification of low-voltage signals from sensors. Its low power consumption supports efficient operation, while cheaper op-amps risk inaccuracies. This choice ensures reliable sensor signal processing.  
-
----
-
-## 3. Light Sensor (**Sensing Subsystem**)
-
-### Option 1
-
-| Solution | Pros | Cons |
-|----------|------|------|
-| **Adafruit LTR-329ALS-01**<br>![329ALS-01](329ALS-01.jpg)<br>Digital ambient light sensor, I2C interface, wide dynamic range<br>Price: $4.95/each<br>[Product Page](https://www.adafruit.com/product/5591)<br>[Datasheet](https://cdn-shop.adafruit.com/product-files/5591/LTR-329ALS-01-Lite-On-datasheet-140998467.pdf) | - I2C interface<br>- Wide dynamic range<br>- Low power consumption<br>- Compact | - Requires I2C<br>- Not suitable for direct sunlight<br>- Limited response time |
-
-### Option 2
-
-| Solution | Pros | Cons |
-|----------|------|------|
-| **TSL2561FN**<br>![TSL2561FN](TSL2561FN.jpeg)<br>Digital light sensor, high resolution, I2C interface<br>Price: $5.50/each<br>[Product Page](https://www.digikey.com/en/products/detail/ams-osram-usa-inc/TSL2561FN/3095178?s=N4IgTCBcDaICoGUAyYCsA2AjAMQHIgF0BfIA)<br>[Datasheet](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1169/TSL2560%2C61.pdf) | - High resolution<br>- Accurate<br>- I2C interface | - Higher cost<br>- Slightly more complex integration |
-
-### Option 3
-
-| Solution | Pros | Cons |
-|----------|------|------|
-| **VEML7700-TT**<br>![VEML7700-TT](VEML7700-TT.jpg)<br>High accuracy ambient light sensor, I2C interface<br>Price: $1.24/each<br>[Product Page](https://www.digikey.com/en/products/detail/vishay-semiconductor-opto-division/VEML7700-TT/6210690)<br>[Datasheet](https://www.vishay.com/docs/84286/veml7700.pdf) | - Very high accuracy<br>- Low power<br>- I2C interface | - Expensive<br>- More complex integration |
-
-**Choice:** Option 1: Adafruit LTR-329ALS-01  
-**Rationale:** The LTR-329ALS-01 is a digital I2C sensor with a wide dynamic range, ideal for indoor light sensing. It balances low power, ease of integration, and sufficient accuracy for Smart Curtain operation. Higher-end sensors are unnecessary for this application.  
-
----
-
-## 4. Motion Sensor (**Sensing Subsystem**)
+## 2. Motion Sensor (**Sensing Subsystem**)
 
 ### Option 1
 
@@ -104,57 +54,7 @@ title: Component Selection
 
 ---
 
-## 5. Button (**User Interface Subsystem**)
-
-### Option 1
-
-| Solution | Pros | Cons |
-|----------|------|------|
-| **PTS645SL43-2 LFS Tactile Switch**<br>![PTS645SL43-2LFS](PTS645SL43-2LFS.jpeg)<br>Basic push button, low cost, easy to integrate<br>Price: $0.24/each<br>[Product Page](https://www.digikey.com/en/products/detail/c-k/PTS645SL43-2-LFS/1146755)<br>[Datasheet](https://www.ckswitches.com/media/1471/pts645.pdf) | - Very low cost<br>- Easy to use | - Short lifespan<br>- Less tactile feedback |
-
-### Option 2
-
-| Solution | Pros | Cons |
-|----------|------|------|
-| **Omron B3F Series Tactile Switch**<br>![B3F](B3F.jpeg)<br>High-quality tactile push button, reliable, long life<br>Price: $0.24/each<br>[Product Page](https://www.digikey.com/en/products/detail/omron-electronics-inc-emc-div/B3F-1000/33150)<br>[Datasheet](https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf) | - Long lifespan (~1M presses)<br>- Reliable actuation<br>- Consistent tactile feel | - Slightly higher cost<br>- Requires careful soldering |
-
-### Option 3
-
-| Solution | Pros | Cons |
-|----------|------|------|
-| **Adafruit Mini Tactile Switch**<br>![Adafruit Mini Tactile Switch](Adafruit_mini_tactile.jpg)<br>Compact, low profile, low cost<br>Price: $0.75/each<br>[Product Page](https://www.adafruit.com/product/367)<br>[Datasheet](https://cdn-shop.adafruit.com/datasheets/B3F-1000-Omron.pdf) | - Compact<br>- Low cost<br>- Easy to use | - Shorter lifespan<br>- Less tactile feel |
-
-**Choice:** Option 2: Omron B3F Series Tactile Switch  
-**Rationale:** The Omron B3F is durable (~1M presses) and provides reliable tactile feedback, making it suitable for frequent user interaction. Cheaper alternatives lack lifespan and consistent feel, which could degrade user experience over time.  
-
----
-
-## 6. Red LED (**User Feedback Subsystem**)
-
-### Option 1
-
-| Solution | Pros | Cons |
-|----------|------|------|
-| **Kingbright WP710A10ND**<br>![WP710A10ND](WP710A10ND.jpg)<br>Standard red LED, 5mm, bright, low power<br>Price: $0.26/each<br>[Product Page](https://www.digikey.com/en/products/detail/kingbright/WP710A10ND/3084190?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLlg0dPaLTWZbBCZYg4B1yAzaT&gclid=CjwKCAjw0sfHBhB6EiwAQtv5qUc3lQmFmMgkvqXCaZmnb6wYTc1j4LoG5FTrfJgctmm0AlTI1-mxChoCPLAQAvD_BwE)<br>[Datasheet](https://www.kingbrightusa.com/images/catalog/SPEC/WP710A10ND.pdf) | - Low cost<br>- Bright<br>- Standard size<br>- Easy soldering | - Requires current-limiting resistor<br>- Fixed color |
-
-### Option 2
-
-| Solution | Pros | Cons |
-|----------|------|------|
-| **SSL-LX5093LID**<br>![SSL-LX5093LID](SSL-LX5093LID.jpeg)<br>High brightness LED, wide viewing angle<br>Price: $0.33/each<br>[Product Page](https://www.digikey.com/en/products/detail/lumex-opto-components-inc/SSL-LX5093LID/270908?gclsrc=aw.ds&gad_source=1&gad_campaignid=17922795960&gbraid=0AAAAADrbLlg0dPaLTWZbBCZYg4B1yAzaT&gclid=CjwKCAjw0sfHBhB6EiwAQtv5qfsbWJM7a5r5K-F3gK-GM6bE57YZ9llQlKydaoRa6sb_n4nqHZQzQRoC7osQAvD_BwE)<br>[Datasheet](https://www.lumex.com/datasheet/files/SSL-LX5093LID.pdf) | - High brightness<br>- Wide viewing angle | - Slightly higher cost<br>- Requires resistor |
-
-### Option 3
-
-| Solution | Pros | Cons |
-|----------|------|------|
-| **Adafruit 5mm Red LED**<br>![LED](LED.jpg)<br>Standard LED, low cost, easy to integrate<br>Price: $0.12/each<br>[Product Page](https://www.adafruit.com/product/299) | - Low cost<br>- Easy integration<br>- Standard size | - Slightly dimmer<br>- Requires resistor |
-
-**Choice:** Option 1: Kingbright WP710A10ND  
-**Rationale:** This LED is bright, low-power, and standard size, making it easy to integrate as a status indicator. Its low cost and simplicity meet the Smart Curtain’s visual feedback requirements without unnecessary complexity.  
-
----
-
-## 7. H-Bridge Motor Driver (**Actuation Subsystem**)
+## 3. H-Bridge Motor Driver (**Actuation Subsystem**)
 
 ### Option 1
 
@@ -179,7 +79,7 @@ title: Component Selection
 
 ---
 
-## 8. Motor (**Actuation Subsystem**)
+## 4. Motor (**Actuation Subsystem**)
 
 ### Option 1
 
@@ -204,7 +104,7 @@ title: Component Selection
 
 ---
 
-## 9. 9V 3A Unregulated Power Supply (**Power Subsystem**)
+## 5. 9V 3A Unregulated Power Supply (**Power Subsystem**)
 
 ### Option 1
 
@@ -229,7 +129,7 @@ title: Component Selection
 
 ---
 
-## 10. 8-Pin Header Connector (**Interface Subsystem**)
+## 6. 8-Pin Header Connector (**Interface Subsystem**)
 
 ### Option 1
 
