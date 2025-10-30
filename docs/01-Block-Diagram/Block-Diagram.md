@@ -8,41 +8,57 @@ tags:
 # Overview
 
 This subsystem represents **Mihir Patel’s** portion of **Team 206’s Smart Curtain Control** project.  
-It focuses on automating curtain movement using environmental sensing and motor control through the **Microchip PIC18F57Q43 Curiosity Nano** microcontroller.
+It focuses on automating curtain movement using environmental sensing and motor control through the Microchip PIC18F57Q43 Curiosity Nano microcontroller.
+
 
 ---
 
 # System Description
 
-The system integrates **light and motion sensors** that provide analog inputs to the MCU through ADC pins, while a **digital button** offers manual control.  
-The microcontroller processes these inputs and outputs control signals to the **H-Bridge driver**, which powers the **DC motor** responsible for opening and closing the curtain.  
-A **red LED indicator** provides visual feedback on system status.
+The subsystem serves as the main control hub within the team’s hub-and-spoke architecture.  
+Mihir’s board receives analog signals from other subsystems. Specifically, the photoresistor and potentiometer on Adrian’s board and the DAC output from Zane’s board.  
+
+Using these inputs, the microcontroller processes sensor data and generates control signals for the H-Bridge motor driver, which powers the DC motor to open or close the curtain along the rod.  
+A red LED indicator provides local visual feedback on system operation, while a push button enables manual curtain control.  
+
+This centralized design allows Mihir’s board to integrate all sensor inputs and coordinate curtain movement logic for the entire system.
+
 
 ---
 
 # Power Configuration
 
-The design uses two voltage levels:
-- **5V, 1.5A regulated supply** for logic and sensors  
-- **9V, 3A unregulated source** for the H-Bridge and motor
+The system uses two distinct voltage rails to ensure reliable operation:
+
+- **5V, 1.5A regulated supply:** Powers the microcontroller, logic components, and control signals  
+- **9V, 3A unregulated source:** Powers the H-Bridge and DC motor  
+
+Separating these power domains reduces noise from the motor and maintains clean operation for analog and digital circuits.
+
 
 ---
 
 # Signal Connections
 
-- **PWM Outputs (RB1, RB2, RD0):** Control motor speed and direction  
-- **Digital I/O Ports (RF5, RC4, RD1, RD2, RD3):** Routed through the 8-pin connector for inter-board communication and expansion  
-- **Connector Pins:**
-  - Pins **1–5:** Digital signals  
-  - Pins **6–7:** Analog sensor data  
-  - Pin **8:** Ground (GND)
+- **Analog input** connects the motion sensor to the microcontroller for environmental detection
+- **PWM and digital control signals** from the microcontroller operate the H-Bridge for motor direction and speed control
+- **Digital input** from a push button enables manual actuation
+- **Digital output** drives the onboard status LED
 
-Each connection is clearly labeled with its **direction** and **signal type** to maintain compatibility and simplify system integration.
+The subsystem is designed using directional, labeled signal paths showing signal type and number of signal pins — per EGR-304 block diagram standards.
 
 ---
 
 # Summary
 
-This modular block diagram documents **Mihir’s subsystem layout**, illustrating clear **power**, **sensor**, and **actuator** interactions within the overall smart curtain system.
+This modular block diagram documents Mihir’s subsystem layout, illustrating clear power, sensor, and actuator interactions within the overall smart curtain system.
 
-![Indivial Block diagram - Team 206](Mihir_Block_Diagram-1.jpg)
+---
+
+## Figure 1 — Mihir Patel Subsystem Block Diagram
+![Indivial Block diagram - Team 206](Block_Diagram_MP.jpg)
+
+### Source Files
+
+- **View the editable draw.io source:**  
+  [Open draw.io Diagram](https://drive.google.com/file/d/1Bihu2sKXNBjKrWqonAoy2F8wztL418d_/view?usp=sharing)
