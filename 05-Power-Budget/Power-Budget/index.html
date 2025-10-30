@@ -732,20 +732,26 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#battery-life-estimation" class="md-nav__link">
+  <a href="#power-source-verification" class="md-nav__link">
     <span class="md-ellipsis">
-      Battery Life Estimation
+      Power Source Verification
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Power Source Verification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#power-budget-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Budget Summary
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#reflection" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reflection
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -890,20 +896,26 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#battery-life-estimation" class="md-nav__link">
+  <a href="#power-source-verification" class="md-nav__link">
     <span class="md-ellipsis">
-      Battery Life Estimation
+      Power Source Verification
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Power Source Verification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#power-budget-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Budget Summary
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#reflection" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reflection
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -935,26 +947,26 @@
 <hr>
 <h2 id="overview">Overview</h2>
 <p>The Power Budget includes:
-- Power requirements of all major components (from datasheets).<br>
-- Assigned voltage rails and current draws.<br>
+- Power requirements of all major components.
+- Assigned voltage rails and current consumption.<br>
 - Regulator and source selections with safety margins.  </p>
 <hr>
 <h2 id="power-budget-table">Power Budget Table</h2>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../PowerBudget_MihirPatel.jpg" data-desc-position="bottom"><img alt="Power Budget Table" src="../PowerBudget_MihirPatel.jpg"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../PowerBudget_MP.jpg" data-desc-position="bottom"><img alt="Power Budget Table" src="../PowerBudget_MP.jpg"></a></p>
 <hr>
 <h3 id="downloadable-files">Downloadable Files</h3>
 <ul>
 <li>
 <p><strong>Power Budget EXCEL:</strong><br>
-<a href="PowerBudget.xlsx">Download Power Budget (Excel)</a>  </p>
+<a href="../PowerBudget_MP.xlsx">Download Power Budget (Excel)</a>  </p>
 </li>
 <li>
 <p><strong>Power Budget ZIP:</strong><br>
-<a href="PowerBudget.xlsx.zip">Download Power Budget (ZIP)</a></p>
+<a href="../PowerBudget_MP.xlsx.zip">Download Power Budget (ZIP)</a></p>
 </li>
 <li>
 <p><strong>Power Budget PDF:</strong><br>
-<a href="../PowerBudget_MihirPatel.pdf">Download Power Budget (PDF)</a></p>
+<a href="../PowerBudget_MP.pdf">Download Power Budget (PDF)</a></p>
 </li>
 </ul>
 <hr>
@@ -973,70 +985,53 @@
 <tbody>
 <tr>
 <td>+12V</td>
-<td>Linear Regulator</td>
-<td>LM7812</td>
+<td>External Power Supply</td>
+<td>Mean Well LRS-100-12</td>
 <td>+12V</td>
-<td>1000</td>
-<td>Powers DC Motor and PIR Sensor</td>
+<td>8500</td>
+<td>Powers DC motor and PIR motion sensor</td>
 </tr>
 <tr>
 <td>+5V</td>
-<td>Linear Regulator</td>
-<td>LM7805</td>
+<td>Buck Regulator</td>
+<td>Pololu S13V15F5</td>
 <td>+5V</td>
-<td>1000</td>
-<td>Powers PSoC, Op-Amps, and Sensors</td>
-</tr>
-<tr>
-<td>+3.3V</td>
-<td>LDO Regulator</td>
-<td>KA78RM33RTF</td>
-<td>+3.3V</td>
-<td>500</td>
-<td>Powers BLE and logic components</td>
-</tr>
-<tr>
-<td>-5V</td>
-<td>Negative Regulator</td>
-<td>LM7905</td>
-<td>-5V</td>
-<td>500</td>
-<td>Powers dual-supply Op-Amps</td>
-</tr>
-<tr>
-<td>External Source</td>
-<td>Wall Adapter</td>
-<td>Mean Well GST25A24-P1J</td>
-<td>+24V</td>
-<td>5000</td>
-<td>Primary source for positive rails</td>
-</tr>
-<tr>
-<td>Battery Source</td>
-<td>9V Battery</td>
-<td>Duracell MN1604</td>
-<td>±9V</td>
-<td>500</td>
-<td>Supplies power to negative rail</td>
+<td>1500</td>
+<td>Powers microcontroller, motor driver, LED, and user input switch</td>
 </tr>
 </tbody>
 </table>
 <hr>
-<h2 id="battery-life-estimation">Battery Life Estimation</h2>
-<p>Estimated battery life for the -5V rail (9V, 500mAh battery):</p>
+<h2 id="power-source-verification">Power Source Verification</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Power Source</strong></th>
+<th><strong>Part Number</strong></th>
+<th><strong>Output</strong></th>
+<th><strong>Max Current (mA)</strong></th>
+<th><strong>Used (mA)</strong></th>
+<th><strong>Remaining (mA)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wall Supply</td>
+<td>Mean Well LRS-100-12</td>
+<td>+12V, 10A</td>
+<td>8500</td>
+<td>6876.25</td>
+<td>1623.75</td>
+</tr>
+</tbody>
+</table>
 <blockquote>
-<p><strong>≈ 1 hour under continuous full load.</strong></p>
+<p>The 12V source supplies all regulators and rails with plenty of remaining current.</p>
+<p>No battery supply is needed for this subsystem.</p>
 </blockquote>
-<p>This represents a worst-case scenario with all active components operating simultaneously.</p>
 <hr>
-<h2 id="reflection">Reflection</h2>
-<p>Developing the Power Budget provided valuable insight into the power flow, efficiency, and safety of the system.<br>
-Key takeaways:
-- Verified each regulator’s load capacity and dropout margin.<br>
-- Identified the DC motor as the highest power consumer.<br>
-- Confirmed that the +24V wall adapter supports all rails simultaneously.<br>
-- Ensured safe and efficient voltage regulation across all subsystems.  </p>
-<p>This analysis guarantees that the overall design maintains electrical reliability and stability during operation.</p>
+<h3 id="power-budget-summary">Power Budget Summary</h3>
+<p>The power budget quantified the electrical demands of the subsystem and guided component selection. By listing each major active device and assigning it to a single voltage rail, we calculated per-rail subtotals and applied a 25% safety margin to account for peak conditions and future changes. This analysis identified the DC motor as the dominant load on the +12V rail, requiring a high-current external supply (Mean Well LRS-100-12). The +5V logic rail is lightly loaded (≈110 mA), so a compact, efficient buck regulator (Pololu S13V15F5) provides ample headroom. Removing unused rails (3.3V and −5V) simplified the design and reduced regulator count, improving reliability. The remaining margins confirm the selected supplies can safely power the subsystem with capacity for modest future expansion.</p>
 <hr>
 
 
