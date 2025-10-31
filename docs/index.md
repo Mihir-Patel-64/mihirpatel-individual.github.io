@@ -27,6 +27,8 @@ The purpose of this datasheet is to document my role, responsibilities, and tech
 
 ## Project Sections
 - [Component Selection](02-Component-Selection/Component-Selection.md)
+- [Bill of Materials](03-BOM/BOM.md)
+- [Component Selection](04-Schematic/schematic.md)
 - [Power Budget](05-Power-Budget/Power-Budget.md)
 
 ### My Contribution
