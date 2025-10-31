@@ -33,7 +33,7 @@ Spare quantities are included for critical components to ensure reliability duri
 | 10 kΩ Axial Resistor | 4 | $0.02 | $0.08 | Yageo / Various | 10K THT | **Available at Peralta** | [Datasheet](https://s.resistor.today/shop/products/epdf/MMFR.pdf) | R1 (+ extras) |
 | 220 Ω Axial Resistor | 4 | $0.02 | $0.08 | Yageo / Various | 220Ω THT | **Available at Peralta** | [Datasheet](https://s.resistor.today/shop/products/epdf/MMFR.pdf) | R2 (+ extras) |
 | Red 5mm LED Indicator | 2 | $0.26 | $0.52 | Kingbright | WP710A10ND | **Available at Peralta** | [Datasheet](https://www.kingbrightusa.com/images/catalog/SPEC/WP710A10ND.pdf) | D1 (+ spare) |
-| Pushbutton Tactile Switch | 2 | $0.24 | $0.48 | Omron | B3F-1000 | **Available at Peralta** | [Datashee](https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf) | SW1 (+ spare) |
+| Pushbutton Tactile Switch | 2 | $0.24 | $0.48 | Omron | B3F-1000 | **Available at Peralta** | [Datasheet](https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf) | SW1 (+ spare) |
 | Test Points — PCB Test Pins | 4 | $0.10 | $0.40 | Keystone / Various | Test Pin | **Available at Peralta** | - | TP1-TP4 |
 | Jumper Wires / Headers / Prototype Leads | assorted | $2.50 | $2.50 | Generic | — | **Available at Peralta** | — | Prototype |
 | PCB Standoffs + Mounting Hardware | assorted | $1.50 | $1.50 | Generic | — | **Available at Peralta** | — | — |
