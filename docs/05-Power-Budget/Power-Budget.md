@@ -21,6 +21,8 @@ The Power Budget includes:
 
 ![Power Budget Table](PowerBudget_MP.jpg)
 
+**Figure 03:** Smart Curtain Subsystem Power Budget
+
 ---
 
 ### Downloadable Files
