@@ -823,6 +823,48 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#7-rail-to-rail-operational-amplifier-signal-conditioning-subsystem" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Rail-to-Rail Operational Amplifier (Signal Conditioning Subsystem)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Rail-to-Rail Operational Amplifier (Signal Conditioning Subsystem)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-3_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 3
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1357,6 +1399,48 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#7-rail-to-rail-operational-amplifier-signal-conditioning-subsystem" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Rail-to-Rail Operational Amplifier (Signal Conditioning Subsystem)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Rail-to-Rail Operational Amplifier (Signal Conditioning Subsystem)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-2_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-3_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 3
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1520,9 +1604,9 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>TB6612FNG</strong><br><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="TB6612FNG.jpg" data-desc-position="bottom"><img alt="TB6612FNG" src="TB6612FNG.jpg"></a><br>Dual H-Bridge, 1.2A per channel, low voltage drop, efficient<br>Price: $5.95/each<br><a href="https://www.pololu.com/product/713">Product Page</a><br><a href="https://cdn.sparkfun.com/datasheets/Robotics/TB6612FNG.pdf">Datasheet</a></td>
-<td>- Efficient<br>- Low voltage drop<br>- Compact<br>- Easy integration</td>
-<td>- Lower current than L298N<br>- Needs heat dissipation for higher loads</td>
+<td><strong>Fairchild FAN8100N</strong><br><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../FAN8100N.jpeg" data-desc-position="bottom"><img alt="FAN8100N" src="../FAN8100N.jpeg"></a><br>Single H-Bridge, efficient, compact driver<br>Price: $1.16/each<br><a href="https://www.digikey.com/en/products/detail/rochester-electronics-llc/FAN8100N/11558200?gclsrc=aw.ds&amp;gad_source=1&amp;gad_campaignid=120565755&amp;gbraid=0AAAAADrbLlhGTyb62df9ti0P1sjNMH4jr&amp;gclid=CjwKCAiAt8bIBhBpEiwAzH1w6ZgXZPSSU_kHKAA3JxQgLP8dpn8R68_7tV_7FHfo61rzrVuWnf3BvhoCdowQAvD_BwE">Product Page</a><br><a href="https://rocelec.widen.net/view/pdf/1pizbjqffm/FAIRS23777-1.pdf?t.download=true&amp;u=5oefqw">Datasheet</a></td>
+<td>- Very Efficient<br>- Low heat generation<br>- Good voltage range</td>
+<td>- Only a single H-bridge<br>- Lower max current (≈1 A continuous) depending on version</td>
 </tr>
 </tbody>
 </table>
@@ -1543,8 +1627,9 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Choice:</strong> Option 2: TB6612FNG<br>
-<strong>Rationale:</strong> The TB6612FNG offers efficient dual H-Bridge operation with low voltage drop, sufficient for the curtain motor. Its compact size and ease of integration make it preferable over the larger, less efficient L298N.  </p>
+<p><strong>Choice:</strong> Option 2: FAN8100N<br>
+<strong>Rationale:</strong> I chose the FAN8100N because it gives me the efficiency and small size I need for this project. It doesn’t waste as much power as older drivers like the L298N, and it stays cooler without needing a heat sink.</p>
+<p>Even though it’s a single H-bridge, it still works well for the motor setup in this project. It’s also one of the more affordable options, which is helpful for a student project with limited budget. </p>
 <hr>
 <h2 id="4-motor-actuation-subsystem">4. Motor (<strong>Actuation Subsystem</strong>)</h2>
 <h3 id="option-1_3">Option 1</h3>
@@ -1710,6 +1795,62 @@
 </table>
 <p><strong>Choice:</strong> Option 2: Molex 5264-08<br>
 <strong>Rationale:</strong> The Molex 5264-08 is gold-plated and durable, providing reliable connectivity for repeated connections in the Smart Curtain subsystem. Although slightly more expensive than generic headers, its long-term reliability and secure fit justify the choice.  </p>
+<hr>
+<h2 id="7-rail-to-rail-operational-amplifier-signal-conditioning-subsystem">7. Rail-to-Rail Operational Amplifier (<strong>Signal Conditioning Subsystem</strong>)</h2>
+<h3 id="option-1_6">Option 1</h3>
+<table>
+<thead>
+<tr>
+<th>Solution</th>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Microchip MCP6004</strong><br><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../MCP6004.jpeg" data-desc-position="bottom"><img alt="MCP6004" src="../MCP6004.jpeg"></a><br>Low-power quad op-amp, rail-to-rail input/output, works down to 1.8V<br>Price: $0.59/each<br><a href="https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060?gclsrc=aw.ds&amp;gad_source=1&amp;gad_campaignid=120565755&amp;gbraid=0AAAAADrbLlg_24iN2813sblIMHGUcLC7a&amp;gclid=CjwKCAiAt8bIBhBpEiwAzH1w6Vaqri7AJgq_Qog2UruTg01JcK50EXqvQ4hn7cYdWnhzatUY0awy_xoCaowQAvD_BwE">Product Page</a><br><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/MCP6001-1R-1U-2-4-1-MHz-Low-Power-Op-Amp-DS20001733L.pdf">Datasheet</a></td>
+<td>- Very low power<br>- Stable for unity-gain buffer<br>- Clean output for ADC<br>- Quad Op-amp (extra channels available)<br>- Rail-to-rail, perfect for 3.3V systems</td>
+<td>- Requires good PCB layout for best performance<br>- Not designed for high-speed signals</td>
+</tr>
+</tbody>
+</table>
+<h3 id="option-2_6">Option 2</h3>
+<table>
+<thead>
+<tr>
+<th>Solution</th>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>STMicroelectronics LM358N</strong><br><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../LM358N.jpeg" data-desc-position="bottom"><img alt="STMicroelectronics LM358N" src="../LM358N.jpeg"></a><br>Classic dual op-amp, extremely common, low cost<br>Price: $0.97/each<br><a href="https://www.digikey.com/en/products/detail/stmicroelectronics/LM358N/591694">Product Page</a><br><a href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/1085/LM158%2C258%2C358.pdf">Datasheet</a></td>
+<td>- Very cheap<br>- Easy to find<br>- Works well at low frequency</td>
+<td>- Not rail-to-rail, so output cannot reach 0V or 3.3V<br>- Poor for ADC buffering at 3.3V<br>- Higher input offset</td>
+</tr>
+</tbody>
+</table>
+<h3 id="option-3_6">Option 3</h3>
+<table>
+<thead>
+<tr>
+<th>Solution</th>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Texas Instruments OPA344PA</strong><br><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../OPA344PA.jpeg" data-desc-position="bottom"><img alt="Texas Instruments OPA344PA" src="../OPA344PA.jpeg"></a><br>High-quality rail-to-rail op-amp, very low noise, single channel<br>Price: $0.99/each<br><a href="https://www.digikey.com/en/products/detail/texas-instruments/OPA344PA/362265">Product Page</a><br><a href="https://rocelec.widen.net/view/pdf/fsllthxnf6/sbos107a.pdf?t.download=true&amp;u=5oefqw">Datasheet</a></td>
+<td>- Excellent accuracy<br>- Rail-to-rail<br>- Very low noise</td>
+<td>- Only one channel per package<br>- Higher cost<br>- More performance than needed for a simple buffer</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Choice:</strong> Option 1: MCP6004<br>
+<strong>Rationale:</strong> I chose the MCP6004 because it matches exactly what my circuit needs for conditioning the motion sensor signal before it goes into the PIC ADC. Since my system runs at 3.3V, having a rail-to-rail op-amp is really important—otherwise the ADC wouldn’t see the full range of the signal.</p>
+<p>The MCP6004 is also low-power, stable as a unity-gain buffer, and gives me extra channels I can use later if we want to add more sensors. Even though there are cheaper options like the LM358, they don’t perform well at 3.3V. The OPA344 is high quality, but more expensive and only single-channel, so the MCP6004 gives the best balance for this project. </p>
 
 
 
