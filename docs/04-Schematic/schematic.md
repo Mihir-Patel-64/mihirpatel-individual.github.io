@@ -21,7 +21,7 @@ This schematic shows the complete design for my Smart Curtain subsystem. It incl
   [Download Symbol Library ZIP](Voltage_regulator_symbol.zip)
 
 - **Schematic Image:**  
-  [Smart Curtain Schematic](Schematic_MP.jpg "Smart Curtain Subsystem Schematic")
+  [Smart Curtain Schematic](HW2folder.jpg "Smart Curtain Subsystem Schematic")
 
 - **Schematic PDF:**  
-  [Download High-Resolution Schematic PDF](Schematic_MP.pdf)
+  [Download High-Resolution Schematic PDF](HW2folder.pdf)
