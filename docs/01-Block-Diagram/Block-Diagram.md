@@ -56,7 +56,7 @@ This modular block diagram documents Mihir’s subsystem layout, illustrating cl
 ---
 
 ## Figure 1 — Mihir Patel Subsystem Block Diagram
-![Indivial Block diagram - Team 206](Block_Diagram_MP.jpg)
+![Indivial Block diagram - Team 206](Block_Diagram_MP.drawio.png)
 
 ### Source Files
 
