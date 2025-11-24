@@ -1643,9 +1643,9 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Pololu 37D 12V DC Motor</strong><br><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../37D.jpg" data-desc-position="bottom"><img alt="37D Motor" src="../37D.jpg"></a><br>Compact brushed DC motor, 12V, high torque, metal gearbox<br>Price: $14.95/each<br><a href="https://www.pololu.com/product/1105">Product Page</a><br><a href="https://www.pololu.com/file/0J1706/pololu-37d-metal-gearmotors.pdf">Datasheet</a></td>
-<td>- High torque<br>- Compact size<br>- Reliable performance</td>
-<td>- Brushed motor (wear over time)<br>- Requires motor driver</td>
+<td><strong>Pololu 2371 (298:1 Micro Metal Gearmotor MP 6V)</strong><br><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../2371.jpg" data-desc-position="bottom"><img alt="Pololu 2371 Motor" src="../2371.jpg"></a><br>DC metal gearmotor, 6V, 298:1 gear ratio, 73 RPM no-load, 2.4 kg·cm stall torque<br>Price: $23.95/each<br><a href="https://www.pololu.com/product/2371">Product Page</a><br><a href="https://www.pololu.com/file/0J1487/pololu-micro-metal-gearmotors-rev-6-1.pdf">Datasheet</a></td>
+<td>- High gear ratio (298:1) for high torque at low speed<br>- Extremely compact (10×12×25 mm)<br>- Low weight (9.5 g)<br>- Low current draw (0.07 A no-load, 0.67 A stall)<br>- Reliable metal gearbox<br>- Affordable</td>
+<td>- Brushed motor (wear over time)<br>- Requires motor driver<br>- Lower RPM than larger motors<br>- No encoder (open-loop control only)</td>
 </tr>
 </tbody>
 </table>
@@ -1683,8 +1683,8 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Choice:</strong> Option 1: Pololu 37D 12V DC Motor<br>
-<strong>Rationale:</strong> The 37D motor provides high torque in a compact, reliable form factor, making it suitable for moving curtains efficiently. Its size and performance balance cost and durability better than the smaller or more expensive alternatives.  </p>
+<p><strong>Choice:</strong> Option 1: Pololu 2371 (298:1 Micro Metal Gearmotor MP 6V)
+<strong>Rationale:</strong> The Pololu 2371 motor is selected for its exceptional compactness (10×12×25 mm), high gear ratio (298:1), and moderate stall torque (2.4 kg·cm), making it ideal for space-constrained applications like smart curtains. Its low weight (9.5 g) and low current draw (0.07 A no-load, 0.67 A stall) ensure minimal power consumption and easy integration into small subsystems. While it is a brushed motor (subject to wear over time), its reliability and affordability make it a practical choice for this project. The lack of an encoder is acceptable for open-loop control scenarios, and the motor's performance is well-matched to the requirements of moving lightweight curtains efficiently.   </p>
 <hr>
 <h2 id="5-9v-3a-unregulated-power-supply-power-subsystem">5. 9V 3A Unregulated Power Supply (<strong>Power Subsystem</strong>)</h2>
 <h3 id="option-1_4">Option 1</h3>
@@ -1715,9 +1715,9 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>DP4009N2M</strong><br><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../DP4009N2M.jpg" data-desc-position="bottom"><img alt="DP4009N2M" src="../DP4009N2M.jpg"></a><br>C/DC desktop adapter, 9 V output, part of “DP40” 40 W series from Artesyn / Emerson (also marketed under DP4009N2M)<br>Price: $35.12/each<br><a href="https://www.digikey.com/en/products/detail/artesyn-advanced-energy/DP4009N2M/2203577?utm_source=chatgpt.com">Product Page</a><br><a href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/511/DP40_Series.pdf">Datasheet</a></td>
-<td>- Fully regulated 9 V output across wide AC input (90-264 VAC)<br>- 40 W power capacity gives margin for 3 A requirement (9×3=27W)<br>- Medical/ITE safeties, high quality external adapter design</td>
-<td>- Less reliable<br>- Desktop adapter form factor may be bulkier than slim wall plug-in form<br>- Possibly higher cost for the spec, and may require external wiring (cord not included)</td>
+<td><strong>Amazon Basics 9V 3A AC/DC Adapter (B09ZTKTLGW)</strong><br><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../B09ZTKTLGW.jpg" data-desc-position="bottom"><img alt="B09ZTKTLGW" src="../B09ZTKTLGW.jpg"></a><br>regulated output, compact wall-plug design<br>Price: $4.99/each<br><a href="https://www.amazon.com/gp/product/B09ZTKTLGW/">Product Page</a></td>
+<td>- Affordable and widely available<br>- Compact, plug-in wall adapter (saves space)<br>- Regulated output ensures stable voltage<br>- Includes standard barrel plug (5.5mm x 2.1mm)<br>- Suitable for continuous operation</td>
+<td>- Lower build quality compared to industrial brands<br>- Limited protection features (no explicit overcurrent/short-circuit protection)<br>- Not designed for harsh environments or high-reliability applications<br>- May run warm under full load</td>
 </tr>
 </tbody>
 </table>
@@ -1738,8 +1738,8 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Choice:</strong> Option 1: Mean Well GST40A09-P1J<br>
-<strong>Rationale:</strong> The Mean Well GST40A09-P1J provides a reliable and stable 9V 3A output, essential for powering the Smart Curtain subsystem safely. Its higher cost is justified by durability and protection features, which are crucial for continuous operation.  </p>
+<p><strong>Choice:</strong> Option 2: Amazon Basics 9V 3A AC/DC Adapter (B09ZTKTLGW)<br>
+<strong>Rationale:</strong> The Amazon Basics 9V 3A adapter is selected for its affordability, compact plug-in form factor, and regulated output, which ensures stable voltage for the Smart Curtain subsystem. While it lacks the advanced protection features and industrial-grade reliability of the Mean Well GST40A09-P1J, it is sufficient for typical indoor applications and offers a cost-effective solution for prototyping and low-to-moderate reliability requirements. The adapter is widely available, easy to integrate, and meets the project's power needs without unnecessary complexity or expense. For applications requiring higher reliability or continuous operation in demanding environments, the Mean Well GST40A09-P1J remains a superior choice, but for most use cases, the Amazon Basics adapter provides the best balance of performance, cost, and convenience.  </p>
 <hr>
 <h2 id="6-8-pin-header-connector-interface-subsystem">6. 8-Pin Header Connector (<strong>Interface Subsystem</strong>)</h2>
 <h3 id="option-1_5">Option 1</h3>
