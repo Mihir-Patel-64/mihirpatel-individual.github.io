@@ -4,7 +4,7 @@ title: Power Budget
 
 # Power Budget
 
-This page presents the Power Budget for the system design, ensuring that all voltage rails, regulators, and power sources can reliably meet the required current demand for every subsystem.
+This page presents the Power Budget for Mihir Patel’s Smart Curtain Control subsystem, verifying that all voltage rails, regulators, and the selected power supply can reliably meet the total current demand for every component.
 
 ---
 
@@ -42,19 +42,18 @@ The Power Budget includes:
 
 | **Power Rail** | **Regulator / Source** | **Part Number** | **Output Voltage** | **Max Current (mA)** | **Notes** |
 |----------------|------------------------|------------------|--------------------|----------------------|------------|
-| +12V | External Power Supply | Mean Well LRS-100-12 | +12V | 8500 | Powers DC motor and PIR motion sensor |
-| +5V | Buck Regulator | Pololu S13V15F5 | +5V | 1500 | Powers microcontroller, motor driver, LED, and user input switch |
+| +5V | Linear Regulator | LM7805 | +5V | 1500 | All logic, control, H-bridge, motor loads |
 
-
+> All major components, including the PIC18F57Q43 microcontroller, motion sensor (LS6501LP), op-amp (MCP6004), LED status indicators, H-Bridge (FAN8100N), and the Pololu 2371 DC Motor, are powered from a single +5V regulated supply, simplifying the distribution and improving reliability.
 ---
 
 ## Power Source Verification
 
 | **Power Source** | **Part Number** | **Output** | **Max Current (mA)** | **Used (mA)** | **Remaining (mA)** |
 |------------------|----------------|-----------|---------------------|---------------|-------------------|
-| Wall Supply | Mean Well LRS-100-12 | +12V, 10A | 8500 | 6876.25 | 1623.75 |
+| Wall Supply | Amazon B09ZTKTLGW | +9V, 3A | 5000 | 1469.25 | 3530.75 |
 
-> The 12V source supplies all regulators and rails with plenty of remaining current.
+> The +9V adapter feeds the LM7805, supplying the entire 5V rail with ample overhead.
 
 > No battery supply is needed for this subsystem.
 
@@ -62,6 +61,7 @@ The Power Budget includes:
 
 ### Power Budget Summary
 
-The power budget quantified the electrical demands of the subsystem and guided component selection. By listing each major active device and assigning it to a single voltage rail, we calculated per-rail subtotals and applied a 25% safety margin to account for peak conditions and future changes. This analysis identified the DC motor as the dominant load on the +12V rail, requiring a high-current external supply (Mean Well LRS-100-12). The +5V logic rail is lightly loaded (≈110 mA), so a compact, efficient buck regulator (Pololu S13V15F5) provides ample headroom. Removing unused rails (3.3V and −5V) simplified the design and reduced regulator count, improving reliability. The remaining margins confirm the selected supplies can safely power the subsystem with capacity for modest future expansion.
+This power budget directly accounts for the electrical demands of all system components, assigning each to a single 5V logic/actuator rail. Current estimates draw from worst-case scenarios and include a 25% safety margin. The external +9V wall adapter and LM7805 regulator are confirmed adequate for simultaneous operation of the microcontroller, peripherals, and DC motor.
+No additional voltage rails or battery supply are required for normal operation. All design choices streamline power management while retaining headroom for expansion or peak loads.
 
 ---
