@@ -843,31 +843,38 @@
 It focuses on automating curtain movement using environmental sensing and motor control through the Microchip PIC18F57Q43 Curiosity Nano microcontroller.</p>
 <hr>
 <h1 id="system-description">System Description</h1>
-<p>The subsystem serves as the main control hub within the team’s hub-and-spoke architecture.<br>
-Mihir’s board receives analog signals from other subsystems. Specifically, the photoresistor and potentiometer on Adrian’s board and the DAC output from Zane’s board.  </p>
-<p>Using these inputs, the microcontroller processes sensor data and generates control signals for the H-Bridge motor driver, which powers the DC motor to open or close the curtain along the rod.<br>
-A red LED indicator provides local visual feedback on system operation, while a push button enables manual curtain control.  </p>
-<p>This centralized design allows Mihir’s board to integrate all sensor inputs and coordinate curtain movement logic for the entire system.</p>
+<p>Mihir’s system functions as the main control and sensing hub in the team’s modular architecture.
+This subsystem handles all local sensor interfacing, including the integrated motion sensor (LSI/CSI LS6501LP) and an op amp (Microchip MCP6004), as well as connections to external subsystems via digital and analog signal ports.</p>
+<p>The microcontroller processes environmental and manual inputs, generating precise PWM and digital signals to control the H-Bridge (ON Semiconductor FAN8100N), which drives the Pololu 2371 DC motor for curtain actuation.</p>
+<p>A debug LED provides status indication, and a dedicated push button offers manual system override.</p>
 <hr>
 <h1 id="power-configuration">Power Configuration</h1>
-<p>The system uses two distinct voltage rails to ensure reliable operation:</p>
-<ul>
-<li><strong>5V, 1.5A regulated supply:</strong> Powers the microcontroller, logic components, and control signals  </li>
-<li><strong>9V, 3A unregulated source:</strong> Powers the H-Bridge and DC motor  </li>
-</ul>
-<p>Separating these power domains reduces noise from the motor and maintains clean operation for analog and digital circuits.</p>
+<p>The entire subsystem operates from a single 5V regulated power rail (LM7805, 1.5A), which supplies the microcontroller, all logic, the H-Bridge, and the DC motor.​
+This streamlined approach simplifies wiring and power management, while ensuring reliable operation for both low-power logic and higher-current actuators.</p>
 <hr>
 <h1 id="signal-connections">Signal Connections</h1>
 <ul>
-<li><strong>Analog input</strong> connects the motion sensor to the microcontroller for environmental detection</li>
-<li><strong>PWM and digital control signals</strong> from the microcontroller operate the H-Bridge for motor direction and speed control</li>
-<li><strong>Digital input</strong> from a push button enables manual actuation</li>
-<li><strong>Digital output</strong> drives the onboard status LED</li>
+<li>
+<p><strong>Analog inputs</strong> from the motion sensor and op amp interface directly to the PIC18F57Q43’s analog channels for real-time environmental sensing</p>
+</li>
+<li>
+<p><strong>PWM and digital outputs</strong> from the microcontroller precisely control the H-Bridge for DC motor direction and speed</p>
+</li>
+<li>
+<p><strong>Digital input</strong> is provided by a manual debug button</p>
+</li>
+<li>
+<p><strong>Digital output</strong> drives the onboard status/debug LED</p>
+</li>
+<li>
+<p>Signal headers (digital/analog connectors) accommodate external expansion and subsystem module interfacing, following EGR-304 block diagram best practices for clarity and reproducibility</p>
+</li>
 </ul>
-<p>The subsystem is designed using directional, labeled signal paths showing signal type and number of signal pins — per EGR-304 block diagram standards.</p>
+<p>All signal paths are clearly labeled for voltage level, type (analog, digital, PWM), and pin assignments, as required for formal subsystem documentation.</p>
 <hr>
 <h1 id="summary">Summary</h1>
-<p>This modular block diagram documents Mihir’s subsystem layout, illustrating clear power, sensor, and actuator interactions within the overall smart curtain system.</p>
+<p>This block diagram documents the layout of Mihir’s curtain control subsystem, illustrating explicit power, sensing, and actuation paths.
+The design emphasizes modularity, robust motor control, and straightforward integration into the broader smart curtain system being developed by Team 206.</p>
 <hr>
 <h2 id="figure-1-mihir-patel-subsystem-block-diagram">Figure 1 — Mihir Patel Subsystem Block Diagram</h2>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../Block_Diagram_MP.drawio.png" data-desc-position="bottom"><img alt="Indivial Block diagram - Team 206" src="../Block_Diagram_MP.drawio.png"></a></p>
