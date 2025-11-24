@@ -752,6 +752,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#all-major-components-including-the-pic18f57q43-microcontroller-motion-sensor-ls6501lp-op-amp-mcp6004-led-status-indicators-h-bridge-fan8100n-and-the-pololu-2371-dc-motor-are-powered-from-a-single-5v-regulated-supply-simplifying-the-distribution-and-improving-reliability" class="md-nav__link">
+    <span class="md-ellipsis">
+      &gt; All major components, including the PIC18F57Q43 microcontroller, motion sensor (LS6501LP), op-amp (MCP6004), LED status indicators, H-Bridge (FAN8100N), and the Pololu 2371 DC Motor, are powered from a single +5V regulated supply, simplifying the distribution and improving reliability.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#power-source-verification" class="md-nav__link">
     <span class="md-ellipsis">
       Power Source Verification
@@ -962,6 +971,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#all-major-components-including-the-pic18f57q43-microcontroller-motion-sensor-ls6501lp-op-amp-mcp6004-led-status-indicators-h-bridge-fan8100n-and-the-pololu-2371-dc-motor-are-powered-from-a-single-5v-regulated-supply-simplifying-the-distribution-and-improving-reliability" class="md-nav__link">
+    <span class="md-ellipsis">
+      &gt; All major components, including the PIC18F57Q43 microcontroller, motion sensor (LS6501LP), op-amp (MCP6004), LED status indicators, H-Bridge (FAN8100N), and the Pololu 2371 DC Motor, are powered from a single +5V regulated supply, simplifying the distribution and improving reliability.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#power-source-verification" class="md-nav__link">
     <span class="md-ellipsis">
       Power Source Verification
@@ -1009,7 +1027,7 @@
 
 
 <h1 id="power-budget">Power Budget</h1>
-<p>This page presents the Power Budget for the system design, ensuring that all voltage rails, regulators, and power sources can reliably meet the required current demand for every subsystem.</p>
+<p>This page presents the Power Budget for Mihir Patel’s Smart Curtain Control subsystem, verifying that all voltage rails, regulators, and the selected power supply can reliably meet the total current demand for every component.</p>
 <hr>
 <h2 id="overview">Overview</h2>
 <p>The Power Budget includes:
@@ -1051,24 +1069,16 @@
 </thead>
 <tbody>
 <tr>
-<td>+12V</td>
-<td>External Power Supply</td>
-<td>Mean Well LRS-100-12</td>
-<td>+12V</td>
-<td>8500</td>
-<td>Powers DC motor and PIR motion sensor</td>
-</tr>
-<tr>
 <td>+5V</td>
-<td>Buck Regulator</td>
-<td>Pololu S13V15F5</td>
+<td>Linear Regulator</td>
+<td>LM7805</td>
 <td>+5V</td>
 <td>1500</td>
-<td>Powers microcontroller, motor driver, LED, and user input switch</td>
+<td>All logic, control, H-bridge, motor loads</td>
 </tr>
 </tbody>
 </table>
-<hr>
+<h2 id="all-major-components-including-the-pic18f57q43-microcontroller-motion-sensor-ls6501lp-op-amp-mcp6004-led-status-indicators-h-bridge-fan8100n-and-the-pololu-2371-dc-motor-are-powered-from-a-single-5v-regulated-supply-simplifying-the-distribution-and-improving-reliability">&gt; All major components, including the PIC18F57Q43 microcontroller, motion sensor (LS6501LP), op-amp (MCP6004), LED status indicators, H-Bridge (FAN8100N), and the Pololu 2371 DC Motor, are powered from a single +5V regulated supply, simplifying the distribution and improving reliability.</h2>
 <h2 id="power-source-verification">Power Source Verification</h2>
 <table>
 <thead>
@@ -1084,21 +1094,22 @@
 <tbody>
 <tr>
 <td>Wall Supply</td>
-<td>Mean Well LRS-100-12</td>
-<td>+12V, 10A</td>
-<td>8500</td>
-<td>6876.25</td>
-<td>1623.75</td>
+<td>Amazon B09ZTKTLGW</td>
+<td>+9V, 3A</td>
+<td>5000</td>
+<td>1469.25</td>
+<td>3530.75</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-<p>The 12V source supplies all regulators and rails with plenty of remaining current.</p>
+<p>The +9V adapter feeds the LM7805, supplying the entire 5V rail with ample overhead.</p>
 <p>No battery supply is needed for this subsystem.</p>
 </blockquote>
 <hr>
 <h3 id="power-budget-summary">Power Budget Summary</h3>
-<p>The power budget quantified the electrical demands of the subsystem and guided component selection. By listing each major active device and assigning it to a single voltage rail, we calculated per-rail subtotals and applied a 25% safety margin to account for peak conditions and future changes. This analysis identified the DC motor as the dominant load on the +12V rail, requiring a high-current external supply (Mean Well LRS-100-12). The +5V logic rail is lightly loaded (≈110 mA), so a compact, efficient buck regulator (Pololu S13V15F5) provides ample headroom. Removing unused rails (3.3V and −5V) simplified the design and reduced regulator count, improving reliability. The remaining margins confirm the selected supplies can safely power the subsystem with capacity for modest future expansion.</p>
+<p>This power budget directly accounts for the electrical demands of all system components, assigning each to a single 5V logic/actuator rail. Current estimates draw from worst-case scenarios and include a 25% safety margin. The external +9V wall adapter and LM7805 regulator are confirmed adequate for simultaneous operation of the microcontroller, peripherals, and DC motor.
+No additional voltage rails or battery supply are required for normal operation. All design choices streamline power management while retaining headroom for expansion or peak loads.</p>
 <hr>
 
 
