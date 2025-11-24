@@ -24,8 +24,8 @@ title: Component Selection
 |----------|------|------|
 | **Pololu S13V15F5**<br>![S13V15F5](S13V15F5.jpg)<br>5V step-up/step-down switching regulator, efficient, compact<br>Price: $4.95/each<br>[Product Page](https://www.pololu.com/product/4084) | - Energy-efficient<br>- Compact<br>- Wide input voltage range<br>- Built-in protections | - More complex<br>- Requires external components<br>- Higher cost |
 
-**Choice:** Option 3: Pololu S13V15F5  
-**Rationale:** The Pololu S13V15F5 is a switching regulator, making it highly energy-efficient and reducing heat. Its wide input range ensures a stable 5V output from a 9V supply, protecting sensitive electronics. Although slightly more expensive and needing external components, its compact size and built-in protections make it ideal for the Smart Curtain subsystem.  
+**Choice:** Option 1: LM7805CT/NOPB  
+**Rationale:** The LM7805 linear voltage regulator is selected for its robust and straightforward design, making it a trusted option for providing a fixed 5V output in a variety of electronic designs. Its low cost, broad availability, and ease of integration allow for fast and reliable implementation. Built-in protection features (thermal shutdown and short-circuit protection) enhance reliability. While the regulator is less efficient and dissipates more heat compared to switching regulators, these drawbacks are acceptable given the manageable load and input-output differential in this application. With proper heatsinking for higher currents, the LM7805 is a proven and practical solution for the Smart Curtain subsystem’s stable 5V power requirement.
 
 ---
 
