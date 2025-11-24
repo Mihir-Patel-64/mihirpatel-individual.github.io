@@ -64,4 +64,4 @@ This modular block diagram documents Mihir’s subsystem layout, illustrating cl
   [Open draw.io Diagram](https://drive.google.com/file/d/1Bihu2sKXNBjKrWqonAoy2F8wztL418d_/view?usp=sharing)
 
 - **Download the .drawio file from GitHub repository:**  
-  [Download from GitHub](https://github.com/Mihir-Patel-64/mihirpatel-individual.github.io/blob/main/docs/01-Block-Diagram/Block_Diagram_MP.jpg)
+  [Download from GitHub](https://github.com/Mihir-Patel-64/mihirpatel-individual.github.io/blob/main/docs/01-Block-Diagram/Block_Diagram_MP.drawio.png)
