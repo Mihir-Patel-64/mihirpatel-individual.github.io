@@ -15,43 +15,42 @@ It focuses on automating curtain movement using environmental sensing and motor 
 
 # System Description
 
-The subsystem serves as the main control hub within the team’s hub-and-spoke architecture.  
-Mihir’s board receives analog signals from other subsystems. Specifically, the photoresistor and potentiometer on Adrian’s board and the DAC output from Zane’s board.  
+Mihir’s system functions as the main control and sensing hub in the team’s modular architecture.
+This subsystem handles all local sensor interfacing, including the integrated motion sensor (LSI/CSI LS6501LP) and an op amp (Microchip MCP6004), as well as connections to external subsystems via digital and analog signal ports.
 
-Using these inputs, the microcontroller processes sensor data and generates control signals for the H-Bridge motor driver, which powers the DC motor to open or close the curtain along the rod.  
-A red LED indicator provides local visual feedback on system operation, while a push button enables manual curtain control.  
+The microcontroller processes environmental and manual inputs, generating precise PWM and digital signals to control the H-Bridge (ON Semiconductor FAN8100N), which drives the Pololu 2371 DC motor for curtain actuation.
 
-This centralized design allows Mihir’s board to integrate all sensor inputs and coordinate curtain movement logic for the entire system.
-
+A debug LED provides status indication, and a dedicated push button offers manual system override.
 
 ---
 
 # Power Configuration
 
-The system uses two distinct voltage rails to ensure reliable operation:
-
-- **5V, 1.5A regulated supply:** Powers the microcontroller, logic components, and control signals  
-- **9V, 3A unregulated source:** Powers the H-Bridge and DC motor  
-
-Separating these power domains reduces noise from the motor and maintains clean operation for analog and digital circuits.
-
+The entire subsystem operates from a single 5V regulated power rail (LM7805, 1.5A), which supplies the microcontroller, all logic, the H-Bridge, and the DC motor.​
+This streamlined approach simplifies wiring and power management, while ensuring reliable operation for both low-power logic and higher-current actuators.
 
 ---
 
 # Signal Connections
 
-- **Analog input** connects the motion sensor to the microcontroller for environmental detection
-- **PWM and digital control signals** from the microcontroller operate the H-Bridge for motor direction and speed control
-- **Digital input** from a push button enables manual actuation
-- **Digital output** drives the onboard status LED
+- **Analog inputs** from the motion sensor and op amp interface directly to the PIC18F57Q43’s analog channels for real-time environmental sensing
 
-The subsystem is designed using directional, labeled signal paths showing signal type and number of signal pins — per EGR-304 block diagram standards.
+- **PWM and digital outputs** from the microcontroller precisely control the H-Bridge for DC motor direction and speed
+
+- **Digital input** is provided by a manual debug button
+
+- **Digital output** drives the onboard status/debug LED
+
+- Signal headers (digital/analog connectors) accommodate external expansion and subsystem module interfacing, following EGR-304 block diagram best practices for clarity and reproducibility
+
+All signal paths are clearly labeled for voltage level, type (analog, digital, PWM), and pin assignments, as required for formal subsystem documentation.
 
 ---
 
 # Summary
 
-This modular block diagram documents Mihir’s subsystem layout, illustrating clear power, sensor, and actuator interactions within the overall smart curtain system.
+This block diagram documents the layout of Mihir’s curtain control subsystem, illustrating explicit power, sensing, and actuation paths.
+The design emphasizes modularity, robust motor control, and straightforward integration into the broader smart curtain system being developed by Team 206.
 
 ---
 
