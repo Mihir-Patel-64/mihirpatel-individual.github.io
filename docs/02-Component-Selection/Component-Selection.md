@@ -87,7 +87,7 @@ Even though it’s a single H-bridge, it still works well for the motor setup in
 
 | Solution | Pros | Cons |
 |----------|------|------|
-| **Pololu 37D 12V DC Motor**<br>![37D Motor](37D.jpg)<br>Compact brushed DC motor, 12V, high torque, metal gearbox<br>Price: $14.95/each<br>[Product Page](https://www.pololu.com/product/1105)<br>[Datasheet](https://www.pololu.com/file/0J1706/pololu-37d-metal-gearmotors.pdf) | - High torque<br>- Compact size<br>- Reliable performance | - Brushed motor (wear over time)<br>- Requires motor driver |
+| **Pololu 2371 (298:1 Micro Metal Gearmotor MP 6V)**<br>![Pololu 2371 Motor](2371.jpg)<br>DC metal gearmotor, 6V, 298:1 gear ratio, 73 RPM no-load, 2.4 kg·cm stall torque<br>Price: $23.95/each<br>[Product Page](https://www.pololu.com/product/2371)<br>[Datasheet](https://www.pololu.com/file/0J1487/pololu-micro-metal-gearmotors-rev-6-1.pdf) | - High gear ratio (298:1) for high torque at low speed<br>- Extremely compact (10×12×25 mm)<br>- Low weight (9.5 g)<br>- Low current draw (0.07 A no-load, 0.67 A stall)<br>- Reliable metal gearbox<br>- Affordable | - Brushed motor (wear over time)<br>- Requires motor driver<br>- Lower RPM than larger motors<br>- No encoder (open-loop control only) |
 
 ### Option 2
 
@@ -101,8 +101,8 @@ Even though it’s a single H-bridge, it still works well for the motor setup in
 |----------|------|------|
 | **Nidec 12V DC Gear Motor**<br>![DC MOTOR](DC.png)<br>High-quality, compact DC motor with gearbox, long life<br>Price: $19.50/each<br>[Product Page](https://www.omc-stepperonline.com/fr/moteur-a-engrenages-cc-12v-brosse-3-5kg-cm-41rpm-90-1-boite-de-vitesses-droite-sgc37-32125000-g90) | - Affotdable<br>- Compact<br>- Moderate torque | - Lower RPM<br>- Brushed design (wear)<br>- Needs driver |
 
-**Choice:** Option 1: Pololu 37D 12V DC Motor  
-**Rationale:** The 37D motor provides high torque in a compact, reliable form factor, making it suitable for moving curtains efficiently. Its size and performance balance cost and durability better than the smaller or more expensive alternatives.  
+**Choice:** Option 1: Pololu 2371 (298:1 Micro Metal Gearmotor MP 6V)
+**Rationale:** The Pololu 2371 motor is selected for its exceptional compactness (10×12×25 mm), high gear ratio (298:1), and moderate stall torque (2.4 kg·cm), making it ideal for space-constrained applications like smart curtains. Its low weight (9.5 g) and low current draw (0.07 A no-load, 0.67 A stall) ensure minimal power consumption and easy integration into small subsystems. While it is a brushed motor (subject to wear over time), its reliability and affordability make it a practical choice for this project. The lack of an encoder is acceptable for open-loop control scenarios, and the motor's performance is well-matched to the requirements of moving lightweight curtains efficiently.   
 
 ---
 
@@ -118,7 +118,7 @@ Even though it’s a single H-bridge, it still works well for the motor setup in
 
 | Solution | Pros | Cons |
 |----------|------|------|
-| **DP4009N2M**<br>![DP4009N2M](DP4009N2M.jpg)<br>C/DC desktop adapter, 9 V output, part of “DP40” 40 W series from Artesyn / Emerson (also marketed under DP4009N2M)<br>Price: $35.12/each<br>[Product Page](https://www.digikey.com/en/products/detail/artesyn-advanced-energy/DP4009N2M/2203577?utm_source=chatgpt.com)<br>[Datasheet](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/511/DP40_Series.pdf) | - Fully regulated 9 V output across wide AC input (90-264 VAC)<br>- 40 W power capacity gives margin for 3 A requirement (9×3=27W)<br>- Medical/ITE safeties, high quality external adapter design | - Less reliable<br>- Desktop adapter form factor may be bulkier than slim wall plug-in form<br>- Possibly higher cost for the spec, and may require external wiring (cord not included) |
+| **Amazon Basics 9V 3A AC/DC Adapter (B09ZTKTLGW)**<br>![B09ZTKTLGW](B09ZTKTLGW.jpg)<br>regulated output, compact wall-plug design<br>Price: $4.99/each<br>[Product Page](https://www.amazon.com/gp/product/B09ZTKTLGW/) | - Affordable and widely available<br>- Compact, plug-in wall adapter (saves space)<br>- Regulated output ensures stable voltage<br>- Includes standard barrel plug (5.5mm x 2.1mm)<br>- Suitable for continuous operation | - Lower build quality compared to industrial brands<br>- Limited protection features (no explicit overcurrent/short-circuit protection)<br>- Not designed for harsh environments or high-reliability applications<br>- May run warm under full load |
 
 ### Option 3
 
@@ -126,8 +126,8 @@ Even though it’s a single H-bridge, it still works well for the motor setup in
 |----------|------|------|
 | **Mean‑Well SGA40E09‑P1J**<br>![SGA40E09](SGA40E09.jpeg)<br>Mean Well SGA40E09-P1J – 40W wall-mount (plug-in) AC/DC adapter, 9 V output, ~4.44 A max<br>Price: $21.47/each<br>[Product Page](https://www.mouser.com/ProductDetail/MEAN-WELL/SGA40E09-P1J?qs=kU9BrJCShyk7JuwjBVtOlQ%3D%3D&srsltid=AfmBOooYPFy-o8z2TKsX1w-nQ8iGEcE8ENDtLzemfdFMs3mg4elY-K3U&utm_source=chatgpt.com)<br>[Datasheet](https://www.stathisnet.gr/image/SpecsUpload/028888.pdf?utm_source=chatgpt.com) | - Slim wall-mounted adapter (plug-in) form factor – simpler installation<br>- 9 V × 4.44 A gives ~40W, plenty margin above 3 A requirement<br>- High efficiency (reduces heat) and modern protections: Overcurrent, Overvoltage, Short-circuit built in | - Being plug-in, less modular for non-standard connector scenarios<br>- Slightly higher cost compared to generic adapters<br>- If input plug standard different (US vs EU), may require adapter or variant|
 
-**Choice:** Option 1: Mean Well GST40A09-P1J  
-**Rationale:** The Mean Well GST40A09-P1J provides a reliable and stable 9V 3A output, essential for powering the Smart Curtain subsystem safely. Its higher cost is justified by durability and protection features, which are crucial for continuous operation.  
+**Choice:** Option 2: Amazon Basics 9V 3A AC/DC Adapter (B09ZTKTLGW)  
+**Rationale:** The Amazon Basics 9V 3A adapter is selected for its affordability, compact plug-in form factor, and regulated output, which ensures stable voltage for the Smart Curtain subsystem. While it lacks the advanced protection features and industrial-grade reliability of the Mean Well GST40A09-P1J, it is sufficient for typical indoor applications and offers a cost-effective solution for prototyping and low-to-moderate reliability requirements. The adapter is widely available, easy to integrate, and meets the project's power needs without unnecessary complexity or expense. For applications requiring higher reliability or continuous operation in demanding environments, the Mean Well GST40A09-P1J remains a superior choice, but for most use cases, the Amazon Basics adapter provides the best balance of performance, cost, and convenience.  
 
 ---
 
