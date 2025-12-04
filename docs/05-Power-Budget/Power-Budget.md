@@ -44,7 +44,10 @@ The Power Budget includes:
 |----------------|------------------------|------------------|--------------------|----------------------|------------|
 | +5V | Linear Regulator | LM7805 | +5V | 1500 | All logic, control, H-bridge, motor loads |
 
+---
+
 > All major components, including the PIC18F57Q43 microcontroller, motion sensor (LS6501LP), op-amp (MCP6004), LED status indicators, H-Bridge (FAN8100N), and the Pololu 2371 DC Motor, are powered from a single +5V regulated supply, simplifying the distribution and improving reliability.
+
 ---
 
 ## Power Source Verification
