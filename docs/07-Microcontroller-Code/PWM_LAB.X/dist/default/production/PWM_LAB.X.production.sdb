@@ -1,0 +1,1536 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F57Q43 ]
+[d frameptr 1249 ]
+"139 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\mcc_generated_files/adc/src/adc.c
+[e E17289 . `uc
+ADC_CHANNEL_VSS 59
+ADC_CHANNEL_TEMP 60
+ADC_CHANNEL_DAC1 61
+ADC_CHANNEL_FVR_BUFFER1 62
+ADC_CHANNEL_FVR_BUFFER2 63
+ADC_CHANNEL_ANA0 0
+ADC_CHANNEL_ANA1 1
+ADC_CHANNEL_ANA2 2
+]
+"164
+[e E17299 . `uc
+ADC_BASIC 0
+ADC_SERIES_ACCUMULATE 1
+ADC_SERIES_AVERAGE 2
+ADC_BURST_AVERAGE 3
+ADC_LOW_PASS_FILTER 4
+]
+"169
+[e E17313 . `uc
+ADC_NEVER_INTERRUPT 0
+ADC_BELOW_LOWER_THRESHOLD 1
+ADC_ABOVE_LOWER_THRESHOLD 2
+ADC_INSIDE_LOWER_AND_UPPER_THRESHOLD 3
+ADC_OUTSIDE_LOWER_AND_UPPER_THRESHOLD 4
+ADC_BELOW_UPPER_THRESHOLD 5
+ADC_ABOVE_UPPER_THRESHOLD 6
+ADC_ALWAYS_INTERRUPT 7
+]
+"308
+[e E17361 . `uc
+ADC_NOT_CONVERTING 0
+ADC_1ST_PRECHARGE 1
+ADC_1ST_ACQUISITION 2
+ADC_1ST_CONVERSION 3
+ADC_SUSPENDED_BETWEEN_1ST_AND_2ND_SAMPLE 4
+ADC_2ND_PRECHARGE 5
+ADC_2ND_ACQUISITION 6
+ADC_2ND_CONVERSION 7
+]
+"313
+[e E17323 . `uc
+ADC_TRIGGER_SOURCE_DISABLED 0
+ADC_TRIGGER_SOURCE_ADACTPPS 1
+ADC_TRIGGER_SOURCE_TMR0 2
+ADC_TRIGGER_SOURCE_TMR1 3
+ADC_TRIGGER_SOURCE_TMR2 4
+ADC_TRIGGER_SOURCE_TMR3 5
+ADC_TRIGGER_SOURCE_TMR4 6
+ADC_TRIGGER_SOURCE_TMR5 7
+ADC_TRIGGER_SOURCE_TMR6 8
+ADC_TRIGGER_SOURCE_SMT1_OVERFLOW 14
+ADC_TRIGGER_SOURCE_CCP1 15
+ADC_TRIGGER_SOURCE_CCP2 16
+ADC_TRIGGER_SOURCE_CCP3 17
+ADC_TRIGGER_SOURCE_PWM1_OUT1 18
+ADC_TRIGGER_SOURCE_PWM1_OUT2 19
+ADC_TRIGGER_SOURCE_PWM2_OUT1 20
+ADC_TRIGGER_SOURCE_PWM2_OUT2 21
+ADC_TRIGGER_SOURCE_PWM3_OUT1 22
+ADC_TRIGGER_SOURCE_PWM3_OUT2 23
+ADC_TRIGGER_SOURCE_NCO1 26
+ADC_TRIGGER_SOURCE_NCO2 27
+ADC_TRIGGER_SOURCE_NCO3 28
+ADC_TRIGGER_SOURCE_CMP1 29
+ADC_TRIGGER_SOURCE_CMP2 30
+ADC_TRIGGER_SOURCE_LOGICAL_OR_OF_ALL_IOC_FLAGS 31
+ADC_TRIGGER_SOURCE_CLC1 32
+ADC_TRIGGER_SOURCE_CLC2 33
+ADC_TRIGGER_SOURCE_CLC3 34
+ADC_TRIGGER_SOURCE_CLC4 35
+ADC_TRIGGER_SOURCE_CLC5 36
+ADC_TRIGGER_SOURCE_CLC6 37
+ADC_TRIGGER_SOURCE_CLC7 38
+ADC_TRIGGER_SOURCE_CLC8 39
+ADC_TRIGGER_SOURCE_ADERRH 61
+ADC_TRIGGER_SOURCE_ADRESH 62
+ADC_TRIGGER_SOURCE_ADPCH 63
+]
+"318
+[e E17306 . `uc
+ADC_FIRST_DERIVATIVE_OF_SINGLE_MEASUREMENT 0
+ADC_ACTUAL_RESULT_VS_SETPOINT 1
+ADC_ACTUAL_RESULT_VS_FILTERED_VALUE 2
+ADC_FIRST_DERIVATIVE_OF_FILTERED_VALUE 4
+ADC_FILTERED_VALUE_VS_SETPOINT 5
+]
+"77 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\main.c
+[e E40 . `uc
+ADC_CHANNEL_VSS 59
+ADC_CHANNEL_TEMP 60
+ADC_CHANNEL_DAC1 61
+ADC_CHANNEL_FVR_BUFFER1 62
+ADC_CHANNEL_FVR_BUFFER2 63
+ADC_CHANNEL_ANA0 0
+ADC_CHANNEL_ANA1 1
+ADC_CHANNEL_ANA2 2
+]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\almod.c
+[v ___almod __almod `(l  1 e 4 0 ]
+"9 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+"9 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\atdiv.c
+[v ___atdiv __atdiv `(m  1 e 3 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\atmod.c
+[v ___atmod __atmod `(m  1 e 3 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"1177 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+[v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
+"1817
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"9 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lodiv.c
+[v ___lodiv __lodiv `(uo  1 e 8 0 ]
+"9 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lomod.c
+[v ___lomod __lomod `(uo  1 e 8 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\ltdiv.c
+[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\ltmod.c
+[v ___ltmod __ltmod `(um  1 e 3 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\printf.c
+[v _printf printf `(i  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul24.c
+[v ___tmul __tmul `(um  1 e 3 0 ]
+"15 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"62 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"47 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\mcc_generated_files/adc/src/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+"139
+[v _ADC_ChannelSelect ADC_ChannelSelect `(v  1 e 1 0 ]
+"144
+[v _ADC_ConversionStart ADC_ConversionStart `(v  1 e 1 0 ]
+"149
+[v _ADC_IsConversionDone ADC_IsConversionDone `(a  1 e 1 0 ]
+"159
+[v _ADC_ConversionResultGet ADC_ConversionResultGet `(s  1 e 2 0 ]
+"408
+[v _ADC_ISR ADC_ISR `(v  1 e 1 0 ]
+"422
+[v _ADC_ThresholdISR ADC_ThresholdISR `(v  1 e 1 0 ]
+"44 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\mcc_generated_files/dac/src/dac1.c
+[v _DAC1_Initialize DAC1_Initialize `(v  1 e 1 0 ]
+"50 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\mcc_generated_files/pwm/src/pwm1_16bit.c
+[v _PWM1_16BIT_Initialize PWM1_16BIT_Initialize `(v  1 e 1 0 ]
+"137
+[v _PWM1_16BIT_SetSlice1Output1DutyCycleRegister PWM1_16BIT_SetSlice1Output1DutyCycleRegister `(v  1 e 1 0 ]
+"149
+[v _PWM1_16BIT_LoadBufferRegisters PWM1_16BIT_LoadBufferRegisters `(v  1 e 1 0 ]
+"189
+[v _PWM1_16BIT_Slice1Output1_SetInterruptHandler PWM1_16BIT_Slice1Output1_SetInterruptHandler `(v  1 e 1 0 ]
+"194
+[v _PWM1_16BIT_Slice1Output2_SetInterruptHandler PWM1_16BIT_Slice1Output2_SetInterruptHandler `(v  1 e 1 0 ]
+"199
+[v _PWM1_16BIT_Period_SetInterruptHandler PWM1_16BIT_Period_SetInterruptHandler `(v  1 e 1 0 ]
+"204
+[v _PWM1_16BIT_Slice1Output1_DefaultInterruptHandler PWM1_16BIT_Slice1Output1_DefaultInterruptHandler `(v  1 s 1 PWM1_16BIT_Slice1Output1_DefaultInterruptHandler ]
+"210
+[v _PWM1_16BIT_Slice1Output2_DefaultInterruptHandler PWM1_16BIT_Slice1Output2_DefaultInterruptHandler `(v  1 s 1 PWM1_16BIT_Slice1Output2_DefaultInterruptHandler ]
+"216
+[v _PWM1_16BIT_Period_DefaultInterruptHandler PWM1_16BIT_Period_DefaultInterruptHandler `(v  1 s 1 PWM1_16BIT_Period_DefaultInterruptHandler ]
+"50 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\mcc_generated_files/pwm/src/pwm2_16bit.c
+[v _PWM2_16BIT_Initialize PWM2_16BIT_Initialize `(v  1 e 1 0 ]
+"137
+[v _PWM2_16BIT_SetSlice1Output1DutyCycleRegister PWM2_16BIT_SetSlice1Output1DutyCycleRegister `(v  1 e 1 0 ]
+"149
+[v _PWM2_16BIT_LoadBufferRegisters PWM2_16BIT_LoadBufferRegisters `(v  1 e 1 0 ]
+"189
+[v _PWM2_16BIT_Slice1Output1_SetInterruptHandler PWM2_16BIT_Slice1Output1_SetInterruptHandler `(v  1 e 1 0 ]
+"194
+[v _PWM2_16BIT_Slice1Output2_SetInterruptHandler PWM2_16BIT_Slice1Output2_SetInterruptHandler `(v  1 e 1 0 ]
+"199
+[v _PWM2_16BIT_Period_SetInterruptHandler PWM2_16BIT_Period_SetInterruptHandler `(v  1 e 1 0 ]
+"204
+[v _PWM2_16BIT_Slice1Output1_DefaultInterruptHandler PWM2_16BIT_Slice1Output1_DefaultInterruptHandler `(v  1 s 1 PWM2_16BIT_Slice1Output1_DefaultInterruptHandler ]
+"210
+[v _PWM2_16BIT_Slice1Output2_DefaultInterruptHandler PWM2_16BIT_Slice1Output2_DefaultInterruptHandler `(v  1 s 1 PWM2_16BIT_Slice1Output2_DefaultInterruptHandler ]
+"216
+[v _PWM2_16BIT_Period_DefaultInterruptHandler PWM2_16BIT_Period_DefaultInterruptHandler `(v  1 s 1 PWM2_16BIT_Period_DefaultInterruptHandler ]
+"50 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\mcc_generated_files/pwm/src/pwm3_16bit.c
+[v _PWM3_16BIT_Initialize PWM3_16BIT_Initialize `(v  1 e 1 0 ]
+"137
+[v _PWM3_16BIT_SetSlice1Output1DutyCycleRegister PWM3_16BIT_SetSlice1Output1DutyCycleRegister `(v  1 e 1 0 ]
+"149
+[v _PWM3_16BIT_LoadBufferRegisters PWM3_16BIT_LoadBufferRegisters `(v  1 e 1 0 ]
+"189
+[v _PWM3_16BIT_Slice1Output1_SetInterruptHandler PWM3_16BIT_Slice1Output1_SetInterruptHandler `(v  1 e 1 0 ]
+"194
+[v _PWM3_16BIT_Slice1Output2_SetInterruptHandler PWM3_16BIT_Slice1Output2_SetInterruptHandler `(v  1 e 1 0 ]
+"199
+[v _PWM3_16BIT_Period_SetInterruptHandler PWM3_16BIT_Period_SetInterruptHandler `(v  1 e 1 0 ]
+"204
+[v _PWM3_16BIT_Slice1Output1_DefaultInterruptHandler PWM3_16BIT_Slice1Output1_DefaultInterruptHandler `(v  1 s 1 PWM3_16BIT_Slice1Output1_DefaultInterruptHandler ]
+"210
+[v _PWM3_16BIT_Slice1Output2_DefaultInterruptHandler PWM3_16BIT_Slice1Output2_DefaultInterruptHandler `(v  1 s 1 PWM3_16BIT_Slice1Output2_DefaultInterruptHandler ]
+"216
+[v _PWM3_16BIT_Period_DefaultInterruptHandler PWM3_16BIT_Period_DefaultInterruptHandler `(v  1 s 1 PWM3_16BIT_Period_DefaultInterruptHandler ]
+"39 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\mcc_generated_files/system/src/clock.c
+[v _CLOCK_Initialize CLOCK_Initialize `(v  1 e 1 0 ]
+"42 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\mcc_generated_files/system/src/interrupt.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+"80
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
+"106
+[v _INT0_CallBack INT0_CallBack `(v  1 e 1 0 ]
+"115
+[v _INT0_SetInterruptHandler INT0_SetInterruptHandler `(v  1 e 1 0 ]
+"119
+[v _INT0_DefaultInterruptHandler INT0_DefaultInterruptHandler `(v  1 e 1 0 ]
+"132
+[v _INT1_CallBack INT1_CallBack `(v  1 e 1 0 ]
+"141
+[v _INT1_SetInterruptHandler INT1_SetInterruptHandler `(v  1 e 1 0 ]
+"145
+[v _INT1_DefaultInterruptHandler INT1_DefaultInterruptHandler `(v  1 e 1 0 ]
+"158
+[v _INT2_CallBack INT2_CallBack `(v  1 e 1 0 ]
+"167
+[v _INT2_SetInterruptHandler INT2_SetInterruptHandler `(v  1 e 1 0 ]
+"171
+[v _INT2_DefaultInterruptHandler INT2_DefaultInterruptHandler `(v  1 e 1 0 ]
+"38 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\mcc_generated_files/system/src/pins.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"38 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\mcc_generated_files/system/src/system.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"69 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\mcc_generated_files/uart/src/uart1.c
+[v _UART1_Initialize UART1_Initialize `(v  1 e 1 0 ]
+"212
+[v _UART1_IsRxReady UART1_IsRxReady `(a  1 e 1 0 ]
+"217
+[v _UART1_IsTxReady UART1_IsTxReady `(a  1 e 1 0 ]
+"259
+[v _UART1_Read UART1_Read `(uc  1 e 1 0 ]
+"265
+[v _UART1_Write UART1_Write `(v  1 e 1 0 ]
+"280
+[v _putch putch `(v  1 e 1 0 ]
+"293
+[v _UART1_DefaultFramingErrorCallback UART1_DefaultFramingErrorCallback `(v  1 s 1 UART1_DefaultFramingErrorCallback ]
+"298
+[v _UART1_DefaultOverrunErrorCallback UART1_DefaultOverrunErrorCallback `(v  1 s 1 UART1_DefaultOverrunErrorCallback ]
+"303
+[v _UART1_DefaultParityErrorCallback UART1_DefaultParityErrorCallback `(v  1 s 1 UART1_DefaultParityErrorCallback ]
+"308
+[v _UART1_FramingErrorCallbackRegister UART1_FramingErrorCallbackRegister `(v  1 e 1 0 ]
+"316
+[v _UART1_OverrunErrorCallbackRegister UART1_OverrunErrorCallbackRegister `(v  1 e 1 0 ]
+"324
+[v _UART1_ParityErrorCallbackRegister UART1_ParityErrorCallbackRegister `(v  1 e 1 0 ]
+"3099 C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18F-Q_DFP/1.27.449/xc8\pic\include\proc/pic18f57q43.h
+[v _DAC1DATL DAC1DATL `VEuc  1 e 1 @125 ]
+"3177
+[v _DAC1CON DAC1CON `VEuc  1 e 1 @127 ]
+"5082
+[v _ACTCON ACTCON `VEuc  1 e 1 @172 ]
+"5152
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @173 ]
+"5292
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @175 ]
+"5332
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @176 ]
+"5390
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @177 ]
+"5592
+[v _OSCEN OSCEN `VEuc  1 e 1 @179 ]
+"9034
+[v _RB0PPS RB0PPS `VEuc  1 e 1 @521 ]
+"9202
+[v _RB3PPS RB3PPS `VEuc  1 e 1 @524 ]
+"9874
+[v _RC7PPS RC7PPS `VEuc  1 e 1 @536 ]
+"10546
+[v _RF0PPS RF0PPS `VEuc  1 e 1 @553 ]
+"14720
+[v _U1RXPPS U1RXPPS `VEuc  1 e 1 @626 ]
+"15416
+[v _RC4I2C RC4I2C `VEuc  1 e 1 @646 ]
+"15548
+[v _RC3I2C RC3I2C `VEuc  1 e 1 @647 ]
+"15680
+[v _RB2I2C RB2I2C `VEuc  1 e 1 @648 ]
+"15812
+[v _RB1I2C RB1I2C `VEuc  1 e 1 @649 ]
+"16989
+[v _U1RXB U1RXB `VEuc  1 e 1 @673 ]
+"17027
+[v _U1RXCHK U1RXCHK `VEuc  1 e 1 @674 ]
+"17047
+[v _U1TXB U1TXB `VEuc  1 e 1 @675 ]
+"17085
+[v _U1TXCHK U1TXCHK `VEuc  1 e 1 @676 ]
+"17112
+[v _U1P1L U1P1L `VEuc  1 e 1 @677 ]
+"17132
+[v _U1P1H U1P1H `VEuc  1 e 1 @678 ]
+"17159
+[v _U1P2L U1P2L `VEuc  1 e 1 @679 ]
+"17179
+[v _U1P2H U1P2H `VEuc  1 e 1 @680 ]
+"17206
+[v _U1P3L U1P3L `VEuc  1 e 1 @681 ]
+"17226
+[v _U1P3H U1P3H `VEuc  1 e 1 @682 ]
+"17246
+[v _U1CON0 U1CON0 `VEuc  1 e 1 @683 ]
+[s S1628 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+`uc 1 MODE3 1 0 :1:3 
+]
+"17279
+[s S1633 . 1 `uc 1 U1MODE 1 0 :4:0 
+`uc 1 U1RXEN 1 0 :1:4 
+`uc 1 U1TXEN 1 0 :1:5 
+`uc 1 U1ABDEN 1 0 :1:6 
+`uc 1 U1BRGS 1 0 :1:7 
+]
+[s S1639 . 1 `uc 1 U1MODE0 1 0 :1:0 
+`uc 1 U1MODE1 1 0 :1:1 
+`uc 1 U1MODE2 1 0 :1:2 
+`uc 1 U1MODE3 1 0 :1:3 
+]
+[s S1644 . 1 `uc 1 MODE 1 0 :4:0 
+`uc 1 RXEN 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 ABDEN 1 0 :1:6 
+`uc 1 BRGS 1 0 :1:7 
+]
+[u S1650 . 1 `S1628 1 . 1 0 `S1633 1 . 1 0 `S1639 1 . 1 0 `S1644 1 . 1 0 ]
+[v _U1CON0bits U1CON0bits `VES1650  1 e 1 @683 ]
+"17374
+[v _U1CON1 U1CON1 `VEuc  1 e 1 @684 ]
+[s S1592 . 1 `uc 1 SENDB 1 0 :1:0 
+`uc 1 BRKOVR 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 RXBIMD 1 0 :1:3 
+`uc 1 WUE 1 0 :1:4 
+`uc 1 . 1 0 :2:5 
+`uc 1 ON 1 0 :1:7 
+]
+"17399
+[s S1600 . 1 `uc 1 U1SENDB 1 0 :1:0 
+`uc 1 U1BRKOVR 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 U1RXBIMD 1 0 :1:3 
+`uc 1 U1WUE 1 0 :1:4 
+`uc 1 . 1 0 :2:5 
+`uc 1 U1ON 1 0 :1:7 
+]
+[u S1608 . 1 `S1592 1 . 1 0 `S1600 1 . 1 0 ]
+[v _U1CON1bits U1CON1bits `VES1608  1 e 1 @684 ]
+"17454
+[v _U1CON2 U1CON2 `VEuc  1 e 1 @685 ]
+"17603
+[v _U1BRGL U1BRGL `VEuc  1 e 1 @686 ]
+"17623
+[v _U1BRGH U1BRGH `VEuc  1 e 1 @687 ]
+"17643
+[v _U1FIFO U1FIFO `VEuc  1 e 1 @688 ]
+[s S1746 . 1 `uc 1 RXBF 1 0 :1:0 
+`uc 1 RXBE 1 0 :1:1 
+`uc 1 XON 1 0 :1:2 
+`uc 1 RXIDL 1 0 :1:3 
+`uc 1 TXBF 1 0 :1:4 
+`uc 1 TXBE 1 0 :1:5 
+`uc 1 STPMD 1 0 :1:6 
+`uc 1 TXWRE 1 0 :1:7 
+]
+"17678
+[s S1755 . 1 `uc 1 U1RXBF 1 0 :1:0 
+`uc 1 U1RXBE 1 0 :1:1 
+`uc 1 U1XON 1 0 :1:2 
+`uc 1 U1RXIDL 1 0 :1:3 
+`uc 1 U1TXBF 1 0 :1:4 
+`uc 1 U1TXBE 1 0 :1:5 
+`uc 1 U1STPMD 1 0 :1:6 
+`uc 1 U1TXWRE 1 0 :1:7 
+]
+[s S1764 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 U1RCIDL 1 0 :1:3 
+]
+[s S1767 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 RCIDL 1 0 :1:3 
+]
+[u S1770 . 1 `S1746 1 . 1 0 `S1755 1 . 1 0 `S1764 1 . 1 0 `S1767 1 . 1 0 ]
+[v _U1FIFObits U1FIFObits `VES1770  1 e 1 @688 ]
+"17773
+[v _U1UIR U1UIR `VEuc  1 e 1 @689 ]
+[s S1678 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 ABDIE 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 ABDIF 1 0 :1:6 
+`uc 1 WUIF 1 0 :1:7 
+]
+"17794
+[s S1684 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 U1ABDIE 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 U1ABDIF 1 0 :1:6 
+`uc 1 U1WUIF 1 0 :1:7 
+]
+[u S1690 . 1 `S1678 1 . 1 0 `S1684 1 . 1 0 ]
+[v _U1UIRbits U1UIRbits `VES1690  1 e 1 @689 ]
+"17829
+[v _U1ERRIR U1ERRIR `VEuc  1 e 1 @690 ]
+[s S1706 . 1 `uc 1 TXCIF 1 0 :1:0 
+`uc 1 RXFOIF 1 0 :1:1 
+`uc 1 RXBKIF 1 0 :1:2 
+`uc 1 FERIF 1 0 :1:3 
+`uc 1 CERIF 1 0 :1:4 
+`uc 1 ABDOVF 1 0 :1:5 
+`uc 1 PERIF 1 0 :1:6 
+`uc 1 TXMTIF 1 0 :1:7 
+]
+"17856
+[s S1715 . 1 `uc 1 U1TXCIF 1 0 :1:0 
+`uc 1 U1RXFOIF 1 0 :1:1 
+`uc 1 U1RXBKIF 1 0 :1:2 
+`uc 1 U1FERIF 1 0 :1:3 
+`uc 1 U1CERIF 1 0 :1:4 
+`uc 1 U1ABDOVF 1 0 :1:5 
+`uc 1 U1PERIF 1 0 :1:6 
+`uc 1 U1TXMTIF 1 0 :1:7 
+]
+[u S1724 . 1 `S1706 1 . 1 0 `S1715 1 . 1 0 ]
+[v _U1ERRIRbits U1ERRIRbits `VES1724  1 e 1 @690 ]
+"17941
+[v _U1ERRIE U1ERRIE `VEuc  1 e 1 @691 ]
+"35938
+[v _ADCP ADCP `VEuc  1 e 1 @984 ]
+[s S471 . 1 `uc 1 CPRDY 1 0 :1:0 
+`uc 1 . 1 0 :6:1 
+`uc 1 ON 1 0 :1:7 
+]
+"36003
+[s S475 . 1 `uc 1 ADCPRDY 1 0 :1:0 
+`uc 1 . 1 0 :6:1 
+`uc 1 CPON 1 0 :1:7 
+]
+"36003
+[s S479 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 ADCPON 1 0 :1:7 
+]
+"36003
+[u S482 . 1 `S471 1 . 1 0 `S475 1 . 1 0 `S479 1 . 1 0 ]
+"36003
+"36003
+[v _ADCPbits ADCPbits `VES482  1 e 1 @984 ]
+"36040
+[v _ADLTHL ADLTHL `VEuc  1 e 1 @985 ]
+"36168
+[v _ADLTHH ADLTHH `VEuc  1 e 1 @986 ]
+"36303
+[v _ADUTHL ADUTHL `VEuc  1 e 1 @987 ]
+"36431
+[v _ADUTHH ADUTHH `VEuc  1 e 1 @988 ]
+"36566
+[v _ADERRL ADERRL `VEuc  1 e 1 @989 ]
+"36694
+[v _ADERRH ADERRH `VEuc  1 e 1 @990 ]
+"36829
+[v _ADSTPTL ADSTPTL `VEuc  1 e 1 @991 ]
+"36957
+[v _ADSTPTH ADSTPTH `VEuc  1 e 1 @992 ]
+"37092
+[v _ADFLTRL ADFLTRL `VEuc  1 e 1 @993 ]
+"37220
+[v _ADFLTRH ADFLTRH `VEuc  1 e 1 @994 ]
+"37357
+[v _ADACCL ADACCL `VEuc  1 e 1 @995 ]
+"37485
+[v _ADACCH ADACCH `VEuc  1 e 1 @996 ]
+"37613
+[v _ADACCU ADACCU `VEuc  1 e 1 @997 ]
+"37741
+[v _ADCNT ADCNT `VEuc  1 e 1 @998 ]
+"37869
+[v _ADRPT ADRPT `VEuc  1 e 1 @999 ]
+"38004
+[v _ADPREVL ADPREVL `VEuc  1 e 1 @1000 ]
+"38132
+[v _ADPREVH ADPREVH `VEuc  1 e 1 @1001 ]
+"38267
+[v _ADRESL ADRESL `VEuc  1 e 1 @1002 ]
+"38395
+[v _ADRESH ADRESH `VEuc  1 e 1 @1003 ]
+"38515
+[v _ADPCH ADPCH `VEuc  1 e 1 @1004 ]
+"38580
+[v _ADACQL ADACQL `VEuc  1 e 1 @1006 ]
+"38708
+[v _ADACQH ADACQH `VEuc  1 e 1 @1007 ]
+"38800
+[v _ADCAP ADCAP `VEuc  1 e 1 @1008 ]
+"38859
+[v _ADPREL ADPREL `VEuc  1 e 1 @1009 ]
+"38987
+[v _ADPREH ADPREH `VEuc  1 e 1 @1010 ]
+"39079
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @1011 ]
+[s S26 . 1 `uc 1 GO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 FM 1 0 :2:2 
+`uc 1 CS 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CONT 1 0 :1:6 
+`uc 1 ON 1 0 :1:7 
+]
+"39117
+[s S34 . 1 `uc 1 ADGO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM 1 0 :2:2 
+`uc 1 ADCS 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ADCONT 1 0 :1:6 
+`uc 1 ADON 1 0 :1:7 
+]
+"39117
+[s S42 . 1 `uc 1 DONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 FM0 1 0 :1:2 
+]
+"39117
+[s S46 . 1 `uc 1 GO_NOT_DONE 1 0 :1:0 
+]
+"39117
+[s S48 . 1 `uc 1 GO_nDONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM0 1 0 :1:2 
+]
+"39117
+[u S52 . 1 `S26 1 . 1 0 `S34 1 . 1 0 `S42 1 . 1 0 `S46 1 . 1 0 `S48 1 . 1 0 ]
+"39117
+"39117
+[v _ADCON0bits ADCON0bits `VES52  1 e 1 @1011 ]
+"39197
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @1012 ]
+[s S391 . 1 `uc 1 DSEN 1 0 :1:0 
+`uc 1 . 1 0 :4:1 
+`uc 1 GPOL 1 0 :1:5 
+`uc 1 IPEN 1 0 :1:6 
+`uc 1 PPOL 1 0 :1:7 
+]
+"39218
+[s S397 . 1 `uc 1 ADDSEN 1 0 :1:0 
+`uc 1 . 1 0 :4:1 
+`uc 1 ADGPOL 1 0 :1:5 
+`uc 1 ADIPEN 1 0 :1:6 
+`uc 1 ADPPOL 1 0 :1:7 
+]
+"39218
+[u S403 . 1 `S391 1 . 1 0 `S397 1 . 1 0 ]
+"39218
+"39218
+[v _ADCON1bits ADCON1bits `VES403  1 e 1 @1012 ]
+"39263
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @1013 ]
+[s S203 . 1 `uc 1 MD 1 0 :3:0 
+`uc 1 ACLR 1 0 :1:3 
+`uc 1 CRS 1 0 :3:4 
+`uc 1 PSIS 1 0 :1:7 
+]
+"39300
+[s S208 . 1 `uc 1 ADMD0 1 0 :1:0 
+`uc 1 ADMD1 1 0 :1:1 
+`uc 1 ADMD2 1 0 :1:2 
+`uc 1 ADACLR 1 0 :1:3 
+`uc 1 ADCRS0 1 0 :1:4 
+`uc 1 ADCRS1 1 0 :1:5 
+`uc 1 ADCRS2 1 0 :1:6 
+`uc 1 ADPSIS 1 0 :1:7 
+]
+"39300
+[s S217 . 1 `uc 1 ADMD 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADCRS 1 0 :3:4 
+]
+"39300
+[s S221 . 1 `uc 1 MD0 1 0 :1:0 
+`uc 1 MD1 1 0 :1:1 
+`uc 1 MD2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 CRS0 1 0 :1:4 
+`uc 1 CRS1 1 0 :1:5 
+`uc 1 CRS2 1 0 :1:6 
+]
+"39300
+[u S229 . 1 `S203 1 . 1 0 `S208 1 . 1 0 `S217 1 . 1 0 `S221 1 . 1 0 ]
+"39300
+"39300
+[v _ADCON2bits ADCON2bits `VES229  1 e 1 @1013 ]
+"39405
+[v _ADCON3 ADCON3 `VEuc  1 e 1 @1014 ]
+[s S270 . 1 `uc 1 TMD 1 0 :3:0 
+`uc 1 SOI 1 0 :1:3 
+`uc 1 CALC 1 0 :3:4 
+]
+"39440
+[s S274 . 1 `uc 1 ADTMD0 1 0 :1:0 
+`uc 1 ADTMD1 1 0 :1:1 
+`uc 1 ADTMD2 1 0 :1:2 
+`uc 1 ADSOI 1 0 :1:3 
+`uc 1 ADCALC0 1 0 :1:4 
+`uc 1 ADCALC1 1 0 :1:5 
+`uc 1 ADCALC2 1 0 :1:6 
+]
+"39440
+[s S282 . 1 `uc 1 ADTMD 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADCALC 1 0 :3:4 
+]
+"39440
+[s S286 . 1 `uc 1 TMD0 1 0 :1:0 
+`uc 1 TMD1 1 0 :1:1 
+`uc 1 TMD2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 CALC0 1 0 :1:4 
+`uc 1 CALC1 1 0 :1:5 
+`uc 1 CALC2 1 0 :1:6 
+]
+"39440
+[u S294 . 1 `S270 1 . 1 0 `S274 1 . 1 0 `S282 1 . 1 0 `S286 1 . 1 0 ]
+"39440
+"39440
+[v _ADCON3bits ADCON3bits `VES294  1 e 1 @1014 ]
+"39535
+[v _ADSTAT ADSTAT `VEuc  1 e 1 @1015 ]
+[s S327 . 1 `uc 1 STAT 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 MATH 1 0 :1:4 
+`uc 1 LTHR 1 0 :1:5 
+`uc 1 UTHR 1 0 :1:6 
+`uc 1 AOV 1 0 :1:7 
+]
+"39572
+[s S334 . 1 `uc 1 ADSTAT0 1 0 :1:0 
+`uc 1 ADSTAT1 1 0 :1:1 
+`uc 1 ADSTAT2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADMATH 1 0 :1:4 
+`uc 1 ADLTHR 1 0 :1:5 
+`uc 1 ADUTHR 1 0 :1:6 
+`uc 1 ADAOV 1 0 :1:7 
+]
+"39572
+[s S343 . 1 `uc 1 ADSTAT 1 0 :3:0 
+`uc 1 . 1 0 :4:3 
+`uc 1 ADOV 1 0 :1:7 
+]
+"39572
+[s S347 . 1 `uc 1 STAT0 1 0 :1:0 
+`uc 1 STAT1 1 0 :1:1 
+`uc 1 STAT2 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 OV 1 0 :1:7 
+]
+"39572
+[u S353 . 1 `S327 1 . 1 0 `S334 1 . 1 0 `S343 1 . 1 0 `S347 1 . 1 0 ]
+"39572
+"39572
+[v _ADSTATbits ADSTATbits `VES353  1 e 1 @1015 ]
+"39667
+[v _ADREF ADREF `VEuc  1 e 1 @1016 ]
+"39749
+[v _ADACT ADACT `VEuc  1 e 1 @1017 ]
+"39853
+[v _ADCLK ADCLK `VEuc  1 e 1 @1018 ]
+"39957
+[v _ANSELA ANSELA `VEuc  1 e 1 @1024 ]
+"40019
+[v _WPUA WPUA `VEuc  1 e 1 @1025 ]
+"40081
+[v _ODCONA ODCONA `VEuc  1 e 1 @1026 ]
+"40143
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @1027 ]
+"40205
+[v _INLVLA INLVLA `VEuc  1 e 1 @1028 ]
+"40267
+[v _IOCAP IOCAP `VEuc  1 e 1 @1029 ]
+"40329
+[v _IOCAN IOCAN `VEuc  1 e 1 @1030 ]
+"40391
+[v _IOCAF IOCAF `VEuc  1 e 1 @1031 ]
+"40453
+[v _ANSELB ANSELB `VEuc  1 e 1 @1032 ]
+"40515
+[v _WPUB WPUB `VEuc  1 e 1 @1033 ]
+"40577
+[v _ODCONB ODCONB `VEuc  1 e 1 @1034 ]
+"40639
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @1035 ]
+"40701
+[v _INLVLB INLVLB `VEuc  1 e 1 @1036 ]
+"40763
+[v _IOCBP IOCBP `VEuc  1 e 1 @1037 ]
+"40825
+[v _IOCBN IOCBN `VEuc  1 e 1 @1038 ]
+"40887
+[v _IOCBF IOCBF `VEuc  1 e 1 @1039 ]
+"40949
+[v _ANSELC ANSELC `VEuc  1 e 1 @1040 ]
+"41011
+[v _WPUC WPUC `VEuc  1 e 1 @1041 ]
+"41073
+[v _ODCONC ODCONC `VEuc  1 e 1 @1042 ]
+"41135
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @1043 ]
+"41197
+[v _INLVLC INLVLC `VEuc  1 e 1 @1044 ]
+"41259
+[v _IOCCP IOCCP `VEuc  1 e 1 @1045 ]
+"41321
+[v _IOCCN IOCCN `VEuc  1 e 1 @1046 ]
+"41383
+[v _IOCCF IOCCF `VEuc  1 e 1 @1047 ]
+"41445
+[v _ANSELD ANSELD `VEuc  1 e 1 @1048 ]
+"41507
+[v _WPUD WPUD `VEuc  1 e 1 @1049 ]
+"41569
+[v _ODCOND ODCOND `VEuc  1 e 1 @1050 ]
+"41631
+[v _SLRCOND SLRCOND `VEuc  1 e 1 @1051 ]
+"41693
+[v _INLVLD INLVLD `VEuc  1 e 1 @1052 ]
+"41755
+[v _ANSELE ANSELE `VEuc  1 e 1 @1056 ]
+"41787
+[v _WPUE WPUE `VEuc  1 e 1 @1057 ]
+"41825
+[v _ODCONE ODCONE `VEuc  1 e 1 @1058 ]
+"41857
+[v _SLRCONE SLRCONE `VEuc  1 e 1 @1059 ]
+"41889
+[v _INLVLE INLVLE `VEuc  1 e 1 @1060 ]
+"41927
+[v _IOCEP IOCEP `VEuc  1 e 1 @1061 ]
+"41948
+[v _IOCEN IOCEN `VEuc  1 e 1 @1062 ]
+"41969
+[v _IOCEF IOCEF `VEuc  1 e 1 @1063 ]
+"41990
+[v _ANSELF ANSELF `VEuc  1 e 1 @1064 ]
+"42052
+[v _WPUF WPUF `VEuc  1 e 1 @1065 ]
+"42114
+[v _ODCONF ODCONF `VEuc  1 e 1 @1066 ]
+"42176
+[v _SLRCONF SLRCONF `VEuc  1 e 1 @1067 ]
+"42238
+[v _INLVLF INLVLF `VEuc  1 e 1 @1068 ]
+"45368
+[v _PWM1ERS PWM1ERS `VEuc  1 e 1 @1120 ]
+"45438
+[v _PWM1CLK PWM1CLK `VEuc  1 e 1 @1121 ]
+"45508
+[v _PWM1LDS PWM1LDS `VEuc  1 e 1 @1122 ]
+"45585
+[v _PWM1PRL PWM1PRL `VEuc  1 e 1 @1123 ]
+"45605
+[v _PWM1PRH PWM1PRH `VEuc  1 e 1 @1124 ]
+"45625
+[v _PWM1CPRE PWM1CPRE `VEuc  1 e 1 @1125 ]
+"45645
+[v _PWM1PIPOS PWM1PIPOS `VEuc  1 e 1 @1126 ]
+"45665
+[v _PWM1GIR PWM1GIR `VEuc  1 e 1 @1127 ]
+[s S703 . 1 `uc 1 S1P1IF 1 0 :1:0 
+`uc 1 S1P2IF 1 0 :1:1 
+]
+"45676
+[u S706 . 1 `S703 1 . 1 0 ]
+"45676
+"45676
+[v _PWM1GIRbits PWM1GIRbits `VES706  1 e 1 @1127 ]
+"45691
+[v _PWM1GIE PWM1GIE `VEuc  1 e 1 @1128 ]
+[s S777 . 1 `uc 1 S1P1IE 1 0 :1:0 
+`uc 1 S1P2IE 1 0 :1:1 
+]
+"45702
+[u S780 . 1 `S777 1 . 1 0 ]
+"45702
+"45702
+[v _PWM1GIEbits PWM1GIEbits `VES780  1 e 1 @1128 ]
+"45717
+[v _PWM1CON PWM1CON `VEuc  1 e 1 @1129 ]
+[s S762 . 1 `uc 1 ERSNOW 1 0 :1:0 
+`uc 1 ERSPOL 1 0 :1:1 
+`uc 1 LD 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 EN 1 0 :1:7 
+]
+"45731
+[u S768 . 1 `S762 1 . 1 0 ]
+"45731
+"45731
+[v _PWM1CONbits PWM1CONbits `VES768  1 e 1 @1129 ]
+"45756
+[v _PWM1S1CFG PWM1S1CFG `VEuc  1 e 1 @1130 ]
+"45822
+[v _PWM1S1P1L PWM1S1P1L `VEuc  1 e 1 @1131 ]
+"45842
+[v _PWM1S1P1H PWM1S1P1H `VEuc  1 e 1 @1132 ]
+"45869
+[v _PWM1S1P2L PWM1S1P2L `VEuc  1 e 1 @1133 ]
+"45889
+[v _PWM1S1P2H PWM1S1P2H `VEuc  1 e 1 @1134 ]
+"45909
+[v _PWM2ERS PWM2ERS `VEuc  1 e 1 @1135 ]
+"45979
+[v _PWM2CLK PWM2CLK `VEuc  1 e 1 @1136 ]
+"46049
+[v _PWM2LDS PWM2LDS `VEuc  1 e 1 @1137 ]
+"46126
+[v _PWM2PRL PWM2PRL `VEuc  1 e 1 @1138 ]
+"46146
+[v _PWM2PRH PWM2PRH `VEuc  1 e 1 @1139 ]
+"46166
+[v _PWM2CPRE PWM2CPRE `VEuc  1 e 1 @1140 ]
+"46186
+[v _PWM2PIPOS PWM2PIPOS `VEuc  1 e 1 @1141 ]
+"46206
+[v _PWM2GIR PWM2GIR `VEuc  1 e 1 @1142 ]
+"46217
+"46217
+[v _PWM2GIRbits PWM2GIRbits `VES706  1 e 1 @1142 ]
+"46232
+[v _PWM2GIE PWM2GIE `VEuc  1 e 1 @1143 ]
+"46243
+"46243
+[v _PWM2GIEbits PWM2GIEbits `VES780  1 e 1 @1143 ]
+"46258
+[v _PWM2CON PWM2CON `VEuc  1 e 1 @1144 ]
+"46272
+"46272
+[v _PWM2CONbits PWM2CONbits `VES768  1 e 1 @1144 ]
+"46297
+[v _PWM2S1CFG PWM2S1CFG `VEuc  1 e 1 @1145 ]
+"46363
+[v _PWM2S1P1L PWM2S1P1L `VEuc  1 e 1 @1146 ]
+"46383
+[v _PWM2S1P1H PWM2S1P1H `VEuc  1 e 1 @1147 ]
+"46410
+[v _PWM2S1P2L PWM2S1P2L `VEuc  1 e 1 @1148 ]
+"46430
+[v _PWM2S1P2H PWM2S1P2H `VEuc  1 e 1 @1149 ]
+"46450
+[v _PWM3ERS PWM3ERS `VEuc  1 e 1 @1150 ]
+"46520
+[v _PWM3CLK PWM3CLK `VEuc  1 e 1 @1151 ]
+"46590
+[v _PWM3LDS PWM3LDS `VEuc  1 e 1 @1152 ]
+"46667
+[v _PWM3PRL PWM3PRL `VEuc  1 e 1 @1153 ]
+"46687
+[v _PWM3PRH PWM3PRH `VEuc  1 e 1 @1154 ]
+"46707
+[v _PWM3CPRE PWM3CPRE `VEuc  1 e 1 @1155 ]
+"46727
+[v _PWM3PIPOS PWM3PIPOS `VEuc  1 e 1 @1156 ]
+"46747
+[v _PWM3GIR PWM3GIR `VEuc  1 e 1 @1157 ]
+"46758
+"46758
+[v _PWM3GIRbits PWM3GIRbits `VES706  1 e 1 @1157 ]
+"46773
+[v _PWM3GIE PWM3GIE `VEuc  1 e 1 @1158 ]
+"46784
+"46784
+[v _PWM3GIEbits PWM3GIEbits `VES780  1 e 1 @1158 ]
+"46799
+[v _PWM3CON PWM3CON `VEuc  1 e 1 @1159 ]
+"46813
+"46813
+[v _PWM3CONbits PWM3CONbits `VES768  1 e 1 @1159 ]
+"46838
+[v _PWM3S1CFG PWM3S1CFG `VEuc  1 e 1 @1160 ]
+"46904
+[v _PWM3S1P1L PWM3S1P1L `VEuc  1 e 1 @1161 ]
+"46924
+[v _PWM3S1P1H PWM3S1P1H `VEuc  1 e 1 @1162 ]
+"46951
+[v _PWM3S1P2L PWM3S1P2L `VEuc  1 e 1 @1163 ]
+"46971
+[v _PWM3S1P2H PWM3S1P2H `VEuc  1 e 1 @1164 ]
+[s S130 . 1 `uc 1 INT0IE 1 0 :1:0 
+`uc 1 ZCDIE 1 0 :1:1 
+`uc 1 ADIE 1 0 :1:2 
+`uc 1 ACTIE 1 0 :1:3 
+`uc 1 C1IE 1 0 :1:4 
+`uc 1 SMT1IE 1 0 :1:5 
+`uc 1 SMT1PRAIE 1 0 :1:6 
+`uc 1 SMT1PWAIE 1 0 :1:7 
+]
+"47124
+[u S139 . 1 `S130 1 . 1 0 ]
+"47124
+"47124
+[v _PIE1bits PIE1bits `VES139  1 e 1 @1183 ]
+[s S168 . 1 `uc 1 ADTIE 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 DMA1SCNTIE 1 0 :1:4 
+`uc 1 DMA1DCNTIE 1 0 :1:5 
+`uc 1 DMA1ORIE 1 0 :1:6 
+`uc 1 DMA1AIE 1 0 :1:7 
+]
+"47184
+[u S175 . 1 `S168 1 . 1 0 ]
+"47184
+"47184
+[v _PIE2bits PIE2bits `VES175  1 e 1 @1184 ]
+[s S712 . 1 `uc 1 U1RXIE 1 0 :1:0 
+`uc 1 U1TXIE 1 0 :1:1 
+`uc 1 U1EIE 1 0 :1:2 
+`uc 1 U1IE 1 0 :1:3 
+`uc 1 . 1 0 :2:4 
+`uc 1 PWM1PIE 1 0 :1:6 
+`uc 1 PWM1IE 1 0 :1:7 
+]
+"47292
+[u S720 . 1 `S712 1 . 1 0 ]
+"47292
+"47292
+[v _PIE4bits PIE4bits `VES720  1 e 1 @1186 ]
+[s S1076 . 1 `uc 1 SPI2RXIE 1 0 :1:0 
+`uc 1 SPI2TXIE 1 0 :1:1 
+`uc 1 SPI2IE 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 TMR3IE 1 0 :1:4 
+`uc 1 TMR3GIE 1 0 :1:5 
+`uc 1 PWM2PIE 1 0 :1:6 
+`uc 1 PWM2IE 1 0 :1:7 
+]
+"47344
+[u S1085 . 1 `S1076 1 . 1 0 ]
+"47344
+"47344
+[v _PIE5bits PIE5bits `VES1085  1 e 1 @1187 ]
+[s S892 . 1 `uc 1 I2C1RXIE 1 0 :1:0 
+`uc 1 I2C1TXIE 1 0 :1:1 
+`uc 1 I2C1IE 1 0 :1:2 
+`uc 1 I2C1EIE 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 CLC3IE 1 0 :1:5 
+`uc 1 PWM3PIE 1 0 :1:6 
+`uc 1 PWM3IE 1 0 :1:7 
+]
+"47463
+[u S901 . 1 `S892 1 . 1 0 ]
+"47463
+"47463
+[v _PIE7bits PIE7bits `VES901  1 e 1 @1189 ]
+[s S109 . 1 `uc 1 INT0IF 1 0 :1:0 
+`uc 1 ZCDIF 1 0 :1:1 
+`uc 1 ADIF 1 0 :1:2 
+`uc 1 ACTIF 1 0 :1:3 
+`uc 1 C1IF 1 0 :1:4 
+`uc 1 SMT1IF 1 0 :1:5 
+`uc 1 SMT1PRAIF 1 0 :1:6 
+`uc 1 SMT1PWAIF 1 0 :1:7 
+]
+"47998
+[u S118 . 1 `S109 1 . 1 0 ]
+"47998
+"47998
+[v _PIR1bits PIR1bits `VES118  1 e 1 @1199 ]
+[s S151 . 1 `uc 1 ADTIF 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 DMA1SCNTIF 1 0 :1:4 
+`uc 1 DMA1DCNTIF 1 0 :1:5 
+`uc 1 DMA1ORIF 1 0 :1:6 
+`uc 1 DMA1AIF 1 0 :1:7 
+]
+"48058
+[u S158 . 1 `S151 1 . 1 0 ]
+"48058
+"48058
+[v _PIR2bits PIR2bits `VES158  1 e 1 @1200 ]
+[s S684 . 1 `uc 1 U1RXIF 1 0 :1:0 
+`uc 1 U1TXIF 1 0 :1:1 
+`uc 1 U1EIF 1 0 :1:2 
+`uc 1 U1IF 1 0 :1:3 
+`uc 1 . 1 0 :2:4 
+`uc 1 PWM1PIF 1 0 :1:6 
+`uc 1 PWM1IF 1 0 :1:7 
+]
+"48166
+[u S692 . 1 `S684 1 . 1 0 ]
+"48166
+"48166
+[v _PIR4bits PIR4bits `VES692  1 e 1 @1202 ]
+[s S1046 . 1 `uc 1 SPI2RXIF 1 0 :1:0 
+`uc 1 SPI2TXIF 1 0 :1:1 
+`uc 1 SPI2IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 TMR3IF 1 0 :1:4 
+`uc 1 TMR3GIF 1 0 :1:5 
+`uc 1 PWM2PIF 1 0 :1:6 
+`uc 1 PWM2IF 1 0 :1:7 
+]
+"48218
+[u S1055 . 1 `S1046 1 . 1 0 ]
+"48218
+"48218
+[v _PIR5bits PIR5bits `VES1055  1 e 1 @1203 ]
+[s S1329 . 1 `uc 1 INT1IF 1 0 :1:0 
+`uc 1 CLC2IF 1 0 :1:1 
+`uc 1 CWG1IF 1 0 :1:2 
+`uc 1 NCO1IF 1 0 :1:3 
+`uc 1 DMA2SCNTIF 1 0 :1:4 
+`uc 1 DMA2DCNTIF 1 0 :1:5 
+`uc 1 DMA2ORIF 1 0 :1:6 
+`uc 1 DMA2AIF 1 0 :1:7 
+]
+"48275
+[u S1338 . 1 `S1329 1 . 1 0 ]
+"48275
+"48275
+[v _PIR6bits PIR6bits `VES1338  1 e 1 @1204 ]
+[s S862 . 1 `uc 1 I2C1RXIF 1 0 :1:0 
+`uc 1 I2C1TXIF 1 0 :1:1 
+`uc 1 I2C1IF 1 0 :1:2 
+`uc 1 I2C1EIF 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 CLC3IF 1 0 :1:5 
+`uc 1 PWM3PIF 1 0 :1:6 
+`uc 1 PWM3IF 1 0 :1:7 
+]
+"48337
+[u S871 . 1 `S862 1 . 1 0 ]
+"48337
+"48337
+[v _PIR7bits PIR7bits `VES871  1 e 1 @1205 ]
+[s S1360 . 1 `uc 1 INT2IF 1 0 :1:0 
+`uc 1 CLC5IF 1 0 :1:1 
+`uc 1 CWG2IF 1 0 :1:2 
+`uc 1 NCO2IF 1 0 :1:3 
+`uc 1 DMA3SCNTIF 1 0 :1:4 
+`uc 1 DMA3DCNTIF 1 0 :1:5 
+`uc 1 DMA3ORIF 1 0 :1:6 
+`uc 1 DMA3AIF 1 0 :1:7 
+]
+"48501
+[u S1369 . 1 `S1360 1 . 1 0 ]
+"48501
+"48501
+[v _PIR10bits PIR10bits `VES1369  1 e 1 @1208 ]
+"48803
+[v _LATA LATA `VEuc  1 e 1 @1214 ]
+"48865
+[v _LATB LATB `VEuc  1 e 1 @1215 ]
+"48927
+[v _LATC LATC `VEuc  1 e 1 @1216 ]
+"48989
+[v _LATD LATD `VEuc  1 e 1 @1217 ]
+"49051
+[v _LATE LATE `VEuc  1 e 1 @1218 ]
+"49083
+[v _LATF LATF `VEuc  1 e 1 @1219 ]
+"49145
+[v _TRISA TRISA `VEuc  1 e 1 @1222 ]
+"49207
+[v _TRISB TRISB `VEuc  1 e 1 @1223 ]
+"49269
+[v _TRISC TRISC `VEuc  1 e 1 @1224 ]
+"49331
+[v _TRISD TRISD `VEuc  1 e 1 @1225 ]
+"49393
+[v _TRISE TRISE `VEuc  1 e 1 @1226 ]
+"49425
+[v _TRISF TRISF `VEuc  1 e 1 @1227 ]
+[s S1927 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"49566
+[u S1936 . 1 `S1927 1 . 1 0 ]
+"49566
+"49566
+[v _PORTBbits PORTBbits `VES1936  1 e 1 @1231 ]
+[s S1281 . 1 `uc 1 INT0EDG 1 0 :1:0 
+`uc 1 INT1EDG 1 0 :1:1 
+`uc 1 INT2EDG 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 IPEN 1 0 :1:5 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"49855
+[s S1289 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 GIEH 1 0 :1:7 
+]
+"49855
+[u S1292 . 1 `S1281 1 . 1 0 `S1289 1 . 1 0 ]
+"49855
+"49855
+[v _INTCON0bits INTCON0bits `VES1292  1 e 1 @1238 ]
+"153 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+[v _prec prec `i  1 s 2 prec ]
+[v _width width `i  1 s 2 width ]
+"154
+[v _flags flags `uc  1 s 1 flags ]
+"185
+[v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
+"43 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\mcc_generated_files/adc/src/adc.c
+[v _ADC_ConversionDoneCallback ADC_ConversionDoneCallback `*.38(v  1 s 3 ADC_ConversionDoneCallback ]
+"44
+[v _ADC_ThresholdCallback ADC_ThresholdCallback `*.38(v  1 s 3 ADC_ThresholdCallback ]
+"45
+[v _adc_busy_status adc_busy_status `a  1 s 1 adc_busy_status ]
+"43 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\mcc_generated_files/pwm/src/pwm1_16bit.c
+[v _PWM1_16BIT_Slice1Output1_InterruptHandler PWM1_16BIT_Slice1Output1_InterruptHandler `*.38(v  1 s 3 PWM1_16BIT_Slice1Output1_InterruptHandler ]
+"44
+[v _PWM1_16BIT_Slice1Output2_InterruptHandler PWM1_16BIT_Slice1Output2_InterruptHandler `*.38(v  1 s 3 PWM1_16BIT_Slice1Output2_InterruptHandler ]
+"45
+[v _PWM1_16BIT_Period_InterruptHandler PWM1_16BIT_Period_InterruptHandler `*.38(v  1 s 3 PWM1_16BIT_Period_InterruptHandler ]
+"43 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\mcc_generated_files/pwm/src/pwm2_16bit.c
+[v _PWM2_16BIT_Slice1Output1_InterruptHandler PWM2_16BIT_Slice1Output1_InterruptHandler `*.38(v  1 s 3 PWM2_16BIT_Slice1Output1_InterruptHandler ]
+"44
+[v _PWM2_16BIT_Slice1Output2_InterruptHandler PWM2_16BIT_Slice1Output2_InterruptHandler `*.38(v  1 s 3 PWM2_16BIT_Slice1Output2_InterruptHandler ]
+"45
+[v _PWM2_16BIT_Period_InterruptHandler PWM2_16BIT_Period_InterruptHandler `*.38(v  1 s 3 PWM2_16BIT_Period_InterruptHandler ]
+"43 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\mcc_generated_files/pwm/src/pwm3_16bit.c
+[v _PWM3_16BIT_Slice1Output1_InterruptHandler PWM3_16BIT_Slice1Output1_InterruptHandler `*.38(v  1 s 3 PWM3_16BIT_Slice1Output1_InterruptHandler ]
+"44
+[v _PWM3_16BIT_Slice1Output2_InterruptHandler PWM3_16BIT_Slice1Output2_InterruptHandler `*.38(v  1 s 3 PWM3_16BIT_Slice1Output2_InterruptHandler ]
+"45
+[v _PWM3_16BIT_Period_InterruptHandler PWM3_16BIT_Period_InterruptHandler `*.38(v  1 s 3 PWM3_16BIT_Period_InterruptHandler ]
+"38 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\mcc_generated_files/system/src/interrupt.c
+[v _INT0_InterruptHandler INT0_InterruptHandler `*.38(v  1 e 3 0 ]
+"39
+[v _INT1_InterruptHandler INT1_InterruptHandler `*.38(v  1 e 3 0 ]
+"40
+[v _INT2_InterruptHandler INT2_InterruptHandler `*.38(v  1 e 3 0 ]
+[s S1532 . 1 `uc 1 perr 1 0 :1:0 
+`uc 1 ferr 1 0 :1:1 
+`uc 1 oerr 1 0 :1:2 
+`uc 1 reserved 1 0 :5:3 
+]
+"51 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\mcc_generated_files/uart/src/uart1.c
+[u S1537 . 2 `S1532 1 . 1 0 `ui 1 status 2 0 ]
+[v _uart1RxLastError uart1RxLastError `VES1537  1 s 2 uart1RxLastError ]
+"57
+[v _UART1_FramingErrorHandler UART1_FramingErrorHandler `*.38(v  1 s 3 UART1_FramingErrorHandler ]
+"58
+[v _UART1_OverrunErrorHandler UART1_OverrunErrorHandler `*.38(v  1 s 3 UART1_OverrunErrorHandler ]
+"59
+[v _UART1_ParityErrorHandler UART1_ParityErrorHandler `*.38(v  1 s 3 UART1_ParityErrorHandler ]
+"62 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"117
+[v main@curButtonState curButtonState `a  1 a 1 69 ]
+"67
+[v main@motorDutyB motorDutyB `us  1 a 2 76 ]
+[v main@motorDutyA motorDutyA `us  1 a 2 74 ]
+"66
+[v main@potValue potValue `us  1 a 2 72 ]
+"67
+[v main@debugLedDuty debugLedDuty `us  1 a 2 66 ]
+"66
+[v main@tempValue tempValue `us  1 a 2 51 ]
+[v main@photoValue photoValue `us  1 a 2 49 ]
+"69
+[v main@motor_dir motor_dir `uc  1 a 1 78 ]
+"72
+[v main@temp_triggered temp_triggered `a  1 a 1 71 ]
+"71
+[v main@photo_triggered photo_triggered `a  1 a 1 70 ]
+"68
+[v main@overrideButton overrideButton `a  1 a 1 68 ]
+"70
+[v main@prevButtonState prevButtonState `a  1 a 1 65 ]
+"189
+} 0
+"5 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\printf.c
+[v _printf printf `(i  1 e 2 0 ]
+{
+"8
+[v printf@ap ap `[1]*.39v  1 a 2 45 ]
+"5
+[v printf@fmt fmt `*.32Cuc  1 p 2 37 ]
+"13
+} 0
+"1817 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\doprnt.c
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+{
+"1820
+[v vfprintf@cfmt cfmt `*.32uc  1 a 2 35 ]
+[s S2619 _IO_FILE 0 ]
+"1817
+[v vfprintf@fp fp `*.39S2619  1 p 2 29 ]
+[v vfprintf@fmt fmt `*.32Cuc  1 p 2 31 ]
+[v vfprintf@ap ap `*.39*.39v  1 p 2 33 ]
+"1840
+} 0
+"1177
+[v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
+{
+"1669
+[v vfpfcnvrt@cp_2661 cp `*.34uc  1 a 2 20 ]
+[u S2632 . 4 `i 1 sint 2 0 `ui 1 uint 2 0 `d 1 f 4 0 ]
+"1188
+[v vfpfcnvrt@convarg convarg `S2632  1 a 4 24 ]
+"1179
+[v vfpfcnvrt@cp cp `*.32uc  1 a 2 22 ]
+[v vfpfcnvrt@c c `uc  1 a 1 28 ]
+"1180
+[v vfpfcnvrt@done done `a  1 a 1 19 ]
+[s S2619 _IO_FILE 0 ]
+"1177
+[v vfpfcnvrt@fp fp `*.39S2619  1 p 2 11 ]
+[v vfpfcnvrt@fmt fmt `*.39*.32uc  1 p 2 13 ]
+[v vfpfcnvrt@ap ap `*.39*.39v  1 p 2 15 ]
+"1814
+} 0
+"8 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 2 ]
+[u S2598 . 2 `*.39uc 1 buffer 2 0 `*.39Cuc 1 source 2 0 ]
+[s S2601 _IO_FILE 11 `S2598 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputc@fp fp `*.39S2601  1 p 2 4 ]
+"24
+} 0
+"280 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\mcc_generated_files/uart/src/uart1.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+[v putch@txData txData `uc  1 p 1 wreg ]
+[v putch@txData txData `uc  1 p 1 wreg ]
+[v putch@txData txData `uc  1 p 1 1 ]
+"287
+} 1
+"265
+[v _UART1_Write UART1_Write `(v  1 e 1 0 ]
+{
+[v UART1_Write@txData txData `uc  1 p 1 wreg ]
+[v UART1_Write@txData txData `uc  1 p 1 wreg ]
+"267
+[v UART1_Write@txData txData `uc  1 p 1 0 ]
+"268
+} 1
+"217
+[v _UART1_IsTxReady UART1_IsTxReady `(a  1 e 1 0 ]
+{
+"220
+} 0
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 4 ]
+"7
+[v ___lwmod@dividend dividend `ui  1 p 2 0 ]
+[v ___lwmod@divisor divisor `ui  1 p 2 2 ]
+"25
+} 0
+"7 C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 4 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 6 ]
+"7
+[v ___lwdiv@dividend dividend `ui  1 p 2 0 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 2 ]
+"30
+} 0
+"38 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\mcc_generated_files/system/src/system.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"49
+} 0
+"69 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\mcc_generated_files/uart/src/uart1.c
+[v _UART1_Initialize UART1_Initialize `(v  1 e 1 0 ]
+{
+"114
+} 0
+"324
+[v _UART1_ParityErrorCallbackRegister UART1_ParityErrorCallbackRegister `(v  1 e 1 0 ]
+{
+[v UART1_ParityErrorCallbackRegister@callbackHandler callbackHandler `*.38(v  1 p 3 0 ]
+"330
+} 0
+"316
+[v _UART1_OverrunErrorCallbackRegister UART1_OverrunErrorCallbackRegister `(v  1 e 1 0 ]
+{
+[v UART1_OverrunErrorCallbackRegister@callbackHandler callbackHandler `*.38(v  1 p 3 0 ]
+"322
+} 0
+"308
+[v _UART1_FramingErrorCallbackRegister UART1_FramingErrorCallbackRegister `(v  1 e 1 0 ]
+{
+[v UART1_FramingErrorCallbackRegister@callbackHandler callbackHandler `*.38(v  1 p 3 0 ]
+"314
+} 0
+"50 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\mcc_generated_files/pwm/src/pwm3_16bit.c
+[v _PWM3_16BIT_Initialize PWM3_16BIT_Initialize `(v  1 e 1 0 ]
+{
+"119
+} 0
+"194
+[v _PWM3_16BIT_Slice1Output2_SetInterruptHandler PWM3_16BIT_Slice1Output2_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v PWM3_16BIT_Slice1Output2_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 0 ]
+"197
+} 0
+"189
+[v _PWM3_16BIT_Slice1Output1_SetInterruptHandler PWM3_16BIT_Slice1Output1_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v PWM3_16BIT_Slice1Output1_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 0 ]
+"192
+} 0
+"199
+[v _PWM3_16BIT_Period_SetInterruptHandler PWM3_16BIT_Period_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v PWM3_16BIT_Period_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 0 ]
+"202
+} 0
+"50 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\mcc_generated_files/pwm/src/pwm2_16bit.c
+[v _PWM2_16BIT_Initialize PWM2_16BIT_Initialize `(v  1 e 1 0 ]
+{
+"119
+} 0
+"194
+[v _PWM2_16BIT_Slice1Output2_SetInterruptHandler PWM2_16BIT_Slice1Output2_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v PWM2_16BIT_Slice1Output2_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 0 ]
+"197
+} 0
+"189
+[v _PWM2_16BIT_Slice1Output1_SetInterruptHandler PWM2_16BIT_Slice1Output1_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v PWM2_16BIT_Slice1Output1_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 0 ]
+"192
+} 0
+"199
+[v _PWM2_16BIT_Period_SetInterruptHandler PWM2_16BIT_Period_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v PWM2_16BIT_Period_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 0 ]
+"202
+} 0
+"50 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\mcc_generated_files/pwm/src/pwm1_16bit.c
+[v _PWM1_16BIT_Initialize PWM1_16BIT_Initialize `(v  1 e 1 0 ]
+{
+"119
+} 0
+"194
+[v _PWM1_16BIT_Slice1Output2_SetInterruptHandler PWM1_16BIT_Slice1Output2_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v PWM1_16BIT_Slice1Output2_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 0 ]
+"197
+} 0
+"189
+[v _PWM1_16BIT_Slice1Output1_SetInterruptHandler PWM1_16BIT_Slice1Output1_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v PWM1_16BIT_Slice1Output1_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 0 ]
+"192
+} 0
+"199
+[v _PWM1_16BIT_Period_SetInterruptHandler PWM1_16BIT_Period_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v PWM1_16BIT_Period_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 0 ]
+"202
+} 0
+"38 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\mcc_generated_files/system/src/pins.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"143
+} 0
+"42 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\mcc_generated_files/system/src/interrupt.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+{
+"71
+} 0
+"167
+[v _INT2_SetInterruptHandler INT2_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v INT2_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 0 ]
+"169
+} 0
+"141
+[v _INT1_SetInterruptHandler INT1_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v INT1_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 0 ]
+"143
+} 0
+"115
+[v _INT0_SetInterruptHandler INT0_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v INT0_SetInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 0 ]
+"117
+} 0
+"44 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\mcc_generated_files/dac/src/dac1.c
+[v _DAC1_Initialize DAC1_Initialize `(v  1 e 1 0 ]
+{
+"51
+} 0
+"39 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\mcc_generated_files/system/src/clock.c
+[v _CLOCK_Initialize CLOCK_Initialize `(v  1 e 1 0 ]
+{
+"58
+} 0
+"47 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\mcc_generated_files/adc/src/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+{
+"95
+} 0
+"137 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\mcc_generated_files/pwm/src/pwm3_16bit.c
+[v _PWM3_16BIT_SetSlice1Output1DutyCycleRegister PWM3_16BIT_SetSlice1Output1DutyCycleRegister `(v  1 e 1 0 ]
+{
+[v PWM3_16BIT_SetSlice1Output1DutyCycleRegister@registerValue registerValue `us  1 p 2 0 ]
+"141
+} 0
+"149
+[v _PWM3_16BIT_LoadBufferRegisters PWM3_16BIT_LoadBufferRegisters `(v  1 e 1 0 ]
+{
+"153
+} 0
+"137 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\mcc_generated_files/pwm/src/pwm2_16bit.c
+[v _PWM2_16BIT_SetSlice1Output1DutyCycleRegister PWM2_16BIT_SetSlice1Output1DutyCycleRegister `(v  1 e 1 0 ]
+{
+[v PWM2_16BIT_SetSlice1Output1DutyCycleRegister@registerValue registerValue `us  1 p 2 0 ]
+"141
+} 0
+"149
+[v _PWM2_16BIT_LoadBufferRegisters PWM2_16BIT_LoadBufferRegisters `(v  1 e 1 0 ]
+{
+"153
+} 0
+"137 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\mcc_generated_files/pwm/src/pwm1_16bit.c
+[v _PWM1_16BIT_SetSlice1Output1DutyCycleRegister PWM1_16BIT_SetSlice1Output1DutyCycleRegister `(v  1 e 1 0 ]
+{
+[v PWM1_16BIT_SetSlice1Output1DutyCycleRegister@registerValue registerValue `us  1 p 2 0 ]
+"141
+} 0
+"149
+[v _PWM1_16BIT_LoadBufferRegisters PWM1_16BIT_LoadBufferRegisters `(v  1 e 1 0 ]
+{
+"153
+} 0
+"149 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\mcc_generated_files/adc/src/adc.c
+[v _ADC_IsConversionDone ADC_IsConversionDone `(a  1 e 1 0 ]
+{
+"152
+} 0
+"144
+[v _ADC_ConversionStart ADC_ConversionStart `(v  1 e 1 0 ]
+{
+"147
+} 0
+"159
+[v _ADC_ConversionResultGet ADC_ConversionResultGet `(s  1 e 2 0 ]
+{
+"162
+} 0
+"139
+[v _ADC_ChannelSelect ADC_ChannelSelect `(v  1 e 1 0 ]
+{
+[v ADC_ChannelSelect@channel channel `E17289  1 p 1 wreg ]
+[v ADC_ChannelSelect@channel channel `E17289  1 p 1 wreg ]
+"141
+[v ADC_ChannelSelect@channel channel `E17289  1 p 1 0 ]
+"142
+} 1
+"80 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\mcc_generated_files/system/src/interrupt.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
+{
+"95
+} 0
+"422 C:\Users\Mihir\MPLABXProjects\PWM_LAB.X\mcc_generated_files/adc/src/adc.c
+[v _ADC_ThresholdISR ADC_ThresholdISR `(v  1 e 1 0 ]
+{
+"434
+} 0
+"408
+[v _ADC_ISR ADC_ISR `(v  1 e 1 0 ]
+{
+"420
+} 0
