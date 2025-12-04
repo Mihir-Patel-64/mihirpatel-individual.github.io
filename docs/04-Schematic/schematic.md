@@ -3,7 +3,7 @@ title: Schematic
 ---
 
 ## Individual Subsystem Schematic
-s
+
 This schematic shows the complete design for my Smart Curtain subsystem. It includes the Curiosity Nano microcontroller board, LM7805 power supply, motion and light sensors (with op-amp signal conditioning), H-bridge motor driver, user button, debug LED, and all required connectors. The schematic demonstrates all power, signal, and control connections needed for reliable operation and integration with the team system.
 
 ![Smart Curtain Schematic](Schematic_MP_final.jpg)
