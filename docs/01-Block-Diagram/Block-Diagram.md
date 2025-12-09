@@ -85,6 +85,40 @@ The design emphasizes modularity, robust motor control, and straightforward inte
 
 ---
 
+## How Mihir’s Subsystem Meets Product Requirements
+
+Each major block in Mihir’s subsystem directly supports one or more of the team’s functional, safety, and usability product requirements. The elements below can be tied back to requirements such as automatic curtain motion, environmental responsiveness, safe/reliable operation, and modular integration with the other team subsystems.
+
+--- 
+
+### Microcontroller and Sensing
+
+- **PIC18F57Q43 Curiosity Nano**: Provides the core processing, ADC channels, and PWM outputs needed to read multiple analog sensors while generating precise motor control signals, satisfying requirements for autonomous, closed-loop curtain positioning and mode logic.
+- **LS6501LP motion sensor + MCP6004 op amp**: The motion IC and op amp condition low-level PIR signals into clean analog/digital signals the MCU can interpret, enabling occupancy-based curtain actions and reducing false triggers, which supports user comfort and energy-efficiency requirements.
+
+--- 
+
+### Actuation and Motor Drive
+
+- **FAN8100N H-bridge driver**: Converts MCU PWM and direction commands into high-current, bidirectional drive for the DC motor, giving the system controlled opening/closing, braking, and safe current handling to meet motion smoothness and hardware protection requirements.
+- **Pololu 2371 DC gearmotor**: Provides sufficient torque at low speed to move the curtain reliably while operating within the current and voltage limits of the driver and supply, fulfilling requirements for quiet, repeatable, and robust mechanical motion.
+
+---
+
+### Power and Reliability
+
+- **LM7805 5 V regulator rail**: Supplies a stable 5 V line for the microcontroller, sensors, logic, and motor driver, simplifying wiring and ensuring all components remain within their specified operating ranges, which supports system reliability and safety requirements.
+- **Common ground and clearly labeled signals**: Shared reference and documented voltage levels reduce integration errors between subsystems, helping to meet requirements for maintainability, testability, and EGR 304 documentation standards.
+
+---
+
+### User Interaction and Modularity
+
+- **Debug LED and manual push button**: Provide immediate visual feedback and a manual override path, aligning with requirements for transparency, debuggability, and user control during abnormal conditions or development.
+- **Connectors to Zane’s temperature circuit and Adrian’s photoresistor circuit**: Dedicated analog and digital lines allow Mihir’s controller to incorporate temperature and light data into control decisions, enabling requirements like temperature-aware protection, daylight-based automation, and future subsystem scalability.
+
+---
+
 ## Figure 1 — Mihir Patel Subsystem Block Diagram
 ![Indivial Block diagram - Team 206](Block_Diagram_MP.drawio.png)
 
