@@ -180,3 +180,21 @@ Even though it’s a single H-bridge, it still works well for the motor setup in
 **Rationale:** I chose the MCP6004 because it matches exactly what my circuit needs for conditioning the motion sensor signal before it goes into the PIC ADC. Since my system runs at 3.3V, having a rail-to-rail op-amp is really important—otherwise the ADC wouldn’t see the full range of the signal.
 
 The MCP6004 is also low-power, stable as a unity-gain buffer, and gives me extra channels I can use later if we want to add more sensors. Even though there are cheaper options like the LM358, they don’t perform well at 3.3V. The OPA344 is high quality, but more expensive and only single-channel, so the MCP6004 gives the best balance for this project. 
+
+---
+
+## Final Component Selection Summary
+
+The table below summarizes the major active components selected for Mihir's Smart Curtain Control subsystem, excluding passives, connectors, and user interface elements.
+
+| **Subsystem**      | **Component**                  | **Manufacturer**       | **Key Specs**                          | **Price** | **Source** |
+|--------------------|--------------------------------|------------------------|----------------------------------------|-----------|------------|
+| **Power**          | LM7805CT/NOPB                 | Texas Instruments     | 5V Linear Regulator, 1.5A             | $1.80     | DigiKey   |
+| **Power Input**    | Amazon Basics 9V 3A Adapter   | Amazon Basics         | 9VDC, 3A, Regulated Wall Plug         | $4.99     | Amazon    |
+| **Sensing**        | LS6501LP PIR Motion Sensor    | LSI/CSI               | Adjustable Sensitivity, Wide Range    | $2.95     | DigiKey   |
+| **Signal Cond.**   | MCP6004                       | Microchip             | Quad Rail-to-Rail Op Amp, 1.8V-6V     | $0.59     | DigiKey   |
+| **Control**        | PIC18F57Q43 Curiosity Nano    | Microchip             | 8-bit MCU w/ ADC, PWM, Multiple I/O   | (Board)   | Microchip |
+| **Motor Drive**    | FAN8100N H-Bridge             | Fairchild/Rochester   | Single H-Bridge, Efficient, Low Heat  | $1.16     | DigiKey   |
+| **Actuation**      | Pololu 2371 Gearmotor         | Pololu                | 6V, 298:1, 73 RPM, 2.4 kg·cm torque  | $23.95    | Pololu    |
+
+**Total Estimated Component Cost: ~$35.44** (excluding MCU dev board and shipping)
