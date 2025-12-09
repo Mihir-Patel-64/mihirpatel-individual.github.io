@@ -25,6 +25,16 @@ The Power Budget includes:
 
 ---
 
+### How the Power Budget Informed Design Choices
+
+- The power budget was used to total the current draw of every major active component on the 5 V rail, including the PIC18F57Q43 microcontroller, LS6501LP motion sensor, MCP6004 op-amp, FAN8100N H-bridge, Pololu 2371 gearmotor, LED indicator, and the LM7805 itself. By summing each device’s worst‑case current and then adding a 25% safety margin, the spreadsheet confirmed a maximum expected load of approximately 1.47 A on the 5 V rail, which remains comfortably below the LM7805’s 1.5 A rating.​
+
+- The same budget was then used to verify that the external 9 V wall adapter can supply the regulator without being overstressed. With a 5 A capability and only about 1.47 A required after regulation, the adapter still has more than 3.5 A of headroom, indicating that the chosen supply is sufficient for startup surges, transient loads, and potential minor future expansions.​
+
+- From these calculations, the key conclusion is that a single 5 V rail powered by an LM7805 fed from the 9 V adapter is adequate for all logic and actuation needs in Mihir’s subsystem. No additional rails or secondary supplies are necessary, and the available margin suggests safe operation as long as basic thermal management for the LM7805 (e.g., modest heatsinking) is provided during continuous motor use.
+
+---
+
 ### Downloadable Files
 
 - **Power Budget EXCEL:**  
