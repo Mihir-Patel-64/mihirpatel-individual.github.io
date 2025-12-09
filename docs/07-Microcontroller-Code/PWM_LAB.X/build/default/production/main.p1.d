@@ -1,0 +1,25 @@
+build/default/production/main.p1:  \
+main.c  \
+mcc_generated_files/adc/adc.h  \
+mcc_generated_files/adc/./adc_types.h  \
+mcc_generated_files/dac/dac1.h  \
+mcc_generated_files/pwm/pwm1_16bit.h  \
+mcc_generated_files/pwm/pwm2_16bit.h  \
+mcc_generated_files/pwm/pwm3_16bit.h  \
+mcc_generated_files/system/clock.h  \
+mcc_generated_files/system/config_bits.h  \
+mcc_generated_files/system/../system/clock.h  \
+mcc_generated_files/system/interrupt.h  \
+mcc_generated_files/system/pins.h  \
+mcc_generated_files/system/system.h  \
+mcc_generated_files/system/../system/config_bits.h  \
+mcc_generated_files/system/../system/pins.h  \
+mcc_generated_files/system/../dac/dac1.h  \
+mcc_generated_files/system/../pwm/pwm1_16bit.h  \
+mcc_generated_files/system/../pwm/pwm2_16bit.h  \
+mcc_generated_files/system/../pwm/pwm3_16bit.h  \
+mcc_generated_files/system/../uart/uart1.h  \
+mcc_generated_files/system/../uart/../system/system.h  \
+mcc_generated_files/system/../system/interrupt.h  \
+mcc_generated_files/system/../adc/adc.h  \
+mcc_generated_files/uart/uart1.h 
