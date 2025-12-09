@@ -865,6 +865,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#final-component-selection-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final Component Selection Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1431,6 +1440,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#final-component-selection-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final Component Selection Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1841,6 +1859,80 @@
 <p><strong>Choice:</strong> Option 1: MCP6004<br>
 <strong>Rationale:</strong> I chose the MCP6004 because it matches exactly what my circuit needs for conditioning the motion sensor signal before it goes into the PIC ADC. Since my system runs at 3.3V, having a rail-to-rail op-amp is really important—otherwise the ADC wouldn’t see the full range of the signal.</p>
 <p>The MCP6004 is also low-power, stable as a unity-gain buffer, and gives me extra channels I can use later if we want to add more sensors. Even though there are cheaper options like the LM358, they don’t perform well at 3.3V. The OPA344 is high quality, but more expensive and only single-channel, so the MCP6004 gives the best balance for this project. </p>
+<hr>
+<h2 id="final-component-selection-summary">Final Component Selection Summary</h2>
+<p>The table below summarizes the major active components selected for Mihir's Smart Curtain Control subsystem, excluding passives, connectors, and user interface elements.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Subsystem</strong></th>
+<th><strong>Component</strong></th>
+<th><strong>Manufacturer</strong></th>
+<th><strong>Key Specs</strong></th>
+<th><strong>Price</strong></th>
+<th><strong>Source</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Power</strong></td>
+<td>LM7805CT/NOPB</td>
+<td>Texas Instruments</td>
+<td>5V Linear Regulator, 1.5A</td>
+<td>$1.80</td>
+<td>DigiKey</td>
+</tr>
+<tr>
+<td><strong>Power Input</strong></td>
+<td>Amazon Basics 9V 3A Adapter</td>
+<td>Amazon Basics</td>
+<td>9VDC, 3A, Regulated Wall Plug</td>
+<td>$4.99</td>
+<td>Amazon</td>
+</tr>
+<tr>
+<td><strong>Sensing</strong></td>
+<td>LS6501LP PIR Motion Sensor</td>
+<td>LSI/CSI</td>
+<td>Adjustable Sensitivity, Wide Range</td>
+<td>$2.95</td>
+<td>DigiKey</td>
+</tr>
+<tr>
+<td><strong>Signal Cond.</strong></td>
+<td>MCP6004</td>
+<td>Microchip</td>
+<td>Quad Rail-to-Rail Op Amp, 1.8V-6V</td>
+<td>$0.59</td>
+<td>DigiKey</td>
+</tr>
+<tr>
+<td><strong>Control</strong></td>
+<td>PIC18F57Q43 Curiosity Nano</td>
+<td>Microchip</td>
+<td>8-bit MCU w/ ADC, PWM, Multiple I/O</td>
+<td>(Board)</td>
+<td>Microchip</td>
+</tr>
+<tr>
+<td><strong>Motor Drive</strong></td>
+<td>FAN8100N H-Bridge</td>
+<td>Fairchild/Rochester</td>
+<td>Single H-Bridge, Efficient, Low Heat</td>
+<td>$1.16</td>
+<td>DigiKey</td>
+</tr>
+<tr>
+<td><strong>Actuation</strong></td>
+<td>Pololu 2371 Gearmotor</td>
+<td>Pololu</td>
+<td>6V, 298:1, 73 RPM, 2.4 kg·cm torque</td>
+<td>$23.95</td>
+<td>Pololu</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Total Estimated Component Cost: ~$35.44</strong> (excluding MCU dev board and shipping)</p>
 
 
 
