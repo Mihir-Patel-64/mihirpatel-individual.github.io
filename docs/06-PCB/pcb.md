@@ -19,6 +19,14 @@ The system integrates sensors, a motor driver, and a microcontroller to automate
 
 **Figure 06:** PCB Bottom Layer View
 
+![Smart Curtain Front PCB Image](front_pcb.jpg)
+
+**Figure 07:** PCB Front View
+
+![Smart Curtain Back PCB Image](back_pcb.jpg)
+
+**Figure 08:** PCB Back View
+
 ---
 
 ### Downloadable Files
@@ -43,3 +51,9 @@ The system integrates sensors, a motor driver, and a microcontroller to automate
 
 - **PCB Bottom Layer PDF:**  
   [Smart Curtain PCB Bottom Layer PDF](PCB_MP_Bottomlayer_1.pdf "Smart Curtain Subsystem PCB Bottom Layer PDF")
+
+- **PCB Front View Image:**  
+  [Smart Curtain Front PCB Image](front_pcb.jpg "Smart Curtain Subsystem Front PCB Image")
+
+- **PCB Back View Image:**  
+  [Smart Curtain Back PCB Image](back_pcb.jpg "Smart Curtain Subsystem Back PCB Image")
